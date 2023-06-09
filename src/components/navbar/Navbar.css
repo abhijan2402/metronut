@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0.5rem 0; */
+}
+
+.brand img {
+    width: 200px;
+}
+
+.navabr-links {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.activeLink {
+    color: #1c76f8;
+}
+
+.loginBtn {
+    border: none;
+    background-color: #ff6600;
+    border-radius: 2rem;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.loginBtn:focus {
+    outline: none;
+}
