@@ -1,0 +1,47 @@
+.MissionMainDiv {
+    border: 2px solid rgb(20, 20, 20);
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 2%;
+}
+
+.MissionTextDiv {
+    width: 60%;
+}
+
+.ImageGoal {
+    width: 100%;
+    height: 100%;
+}
+
+.MissionImageDiv {
+    width: 39%;
+}
+
+.MissionTitle {
+    text-align: center;
+}
+
+.MissionTitle h1 {
+    color: black;
+    margin-top: 5%;
+}
+
+.MissonDesc {
+    margin: auto;
+    width: auto;
+    /* border: 1px solid green; */
+    width: 80%;
+}
+
+.MissonDesc p {
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    margin-top: 2%;
+    text-align: center;
+}

@@ -5,15 +5,17 @@ import Navbar from '../../components/navbar/Navbar'
 import Enroll from '../Enroll/Enroll'
 import Lottie from "lottie-react";
 import confuse from '../../assets/confuse.json'
+import Mission from '../../components/Mission&Vision/Mission';
+import VIsion from '../../components/Mission&Vision/VIsion';
 function Home() {
     const [FormActive, setFormActive] = useState(false)
     return (
 
         <>
             <Navbar />
-            <Enroll/>
-            {/* <Lottie animationData={confuse} style={{ width: "10%", height: "10%" }} />
-            <div>Hello</div> */}
+            {/* <Enroll/> */}
+            <Mission />
+            <VIsion />
             {/* // <div className='HomeMainDiv'>
         //     {
         //         FormActive ?
