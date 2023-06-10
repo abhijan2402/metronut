@@ -5,7 +5,7 @@ import {logo1} from '../../assets'
 
 const Navbar = () => {
   return (
-    <nav className="navbar container">
+    <nav className="navbar container-fluid">
       <div className="brand">
         <img
           src={logo1}

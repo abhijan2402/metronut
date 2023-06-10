@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 // import Form from '../FormModal/Form'
 import './Home.css'
 import Navbar from '../../components/navbar/Navbar'
+import Enroll from '../Enroll/Enroll'
 import Lottie from "lottie-react";
 import confuse from '../../assets/confuse.json'
 function Home() {
@@ -10,8 +11,9 @@ function Home() {
 
         <>
             <Navbar />
-            <Lottie animationData={confuse} style={{ width: "10%", height: "10%" }} />
-            <div>Hello</div>
+            <Enroll/>
+            {/* <Lottie animationData={confuse} style={{ width: "10%", height: "10%" }} />
+            <div>Hello</div> */}
             {/* // <div className='HomeMainDiv'>
         //     {
         //         FormActive ?
