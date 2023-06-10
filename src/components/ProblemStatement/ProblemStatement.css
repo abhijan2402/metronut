@@ -1,0 +1,37 @@
+.problemStatement-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.problemStatement-heading {
+    text-align: center;
+    color: #000000;
+}
+
+.problemStatement-heading h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.problemStatement-heading p {
+    line-height: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.problemStatement-content {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.problemStatement-content .image-upload {
+    border: 1px solid gray;
+}
+
+.problemStatement-item {
+    display: flex;
+    gap: 1rem;
+}

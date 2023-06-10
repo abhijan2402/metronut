@@ -1,0 +1,51 @@
+.landing-container {
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 95%;
+    margin: auto;
+    margin-top: 6%;
+}
+
+.landing-container h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.landing-container p{
+    font-size: 1.8rem;
+    color: #000000;
+    line-height: 1rem;
+}
+
+.landing-price {
+    display: flex;
+    background-color: #ff6600;
+    color: #000000;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding:  0.5rem 1.3rem;
+    border-radius: 0.7rem;
+}
+
+.landing-price h2:last-child {
+    color: #ffffff;
+}
+
+.landing-price h2:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.stick-line {
+    width: 103%;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+}
