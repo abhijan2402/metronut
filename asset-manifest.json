@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/metronut/static/css/main.de5c0dc0.css",
-    "main.js": "/metronut/static/js/main.7c6dd81c.js",
+    "main.js": "/metronut/static/js/main.94a97fd9.js",
     "static/media/logo1.png": "/metronut/static/media/logo1.1985464f7ec1c4e176fe.png",
     "static/media/logo3.png": "/metronut/static/media/logo3.875b8fb09dc5000dfd16.png",
     "static/media/logo2.png": "/metronut/static/media/logo2.aed9d288c5b2418319be.png",
@@ -10,10 +10,10 @@
     "static/media/plus.svg": "/metronut/static/media/plus.e4d7be0f630c6dbc8d41.svg",
     "static/media/dash.svg": "/metronut/static/media/dash.d4499b1e324d682106b3.svg",
     "main.de5c0dc0.css.map": "/metronut/static/css/main.de5c0dc0.css.map",
-    "main.7c6dd81c.js.map": "/metronut/static/js/main.7c6dd81c.js.map"
+    "main.94a97fd9.js.map": "/metronut/static/js/main.94a97fd9.js.map"
   },
   "entrypoints": [
     "static/css/main.de5c0dc0.css",
-    "static/js/main.7c6dd81c.js"
+    "static/js/main.94a97fd9.js"
   ]
 }
