@@ -16,7 +16,6 @@ code {
 
 body {
   background: linear-gradient(90deg, #e1e1eb, #f8e2d2);
-  padding-bottom: 5rem;
 }
 
 
@@ -46,4 +45,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #faba8b;  
   border-radius: 20px;     
+}
+
+
+.hide {
+  display: none;
 }

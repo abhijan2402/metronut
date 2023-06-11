@@ -22,16 +22,94 @@
 
 .problemStatement-content {
     margin-top: 7rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
 }
 
 .problemStatement-content .image-upload {
-    border: 1px solid gray;
+    border: 2px solid gray;
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
 }
+
+.problemStatement-content .image-upload input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    appearance: none;
+    color:transparent;
+}
+
+.problemStatement-content .image-upload input::file-selector-button {
+    display: none;
+  }
+
+.problemStatement-content .image-upload p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 500;
+}
+
 
 .problemStatement-item {
     display: flex;
     gap: 1rem;
+    justify-content: space-between;
+}
+
+.problemStatement-item p{
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.problemStatement-item button {
+    display: flex;
+    gap: 5px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    border: 2px solid gray;
+    background: none;
+    border-radius: 2rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.problemStatement-item button img {
+    width: 18px;
+    opacity: 0.7;
+}
+
+.problemStatement-item textarea {
+    background: none;
+    resize: none;
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding:0.5rem  1rem;
+    -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.problemStatement-item textarea::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.problemStatement-item textarea:focus {
+    outline: none;
 }
