@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ProblemStatement.css';
 import { downArrow } from '../../assets';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const ProblemStatement = () => {
   const [statementOneToggle, setStatementOneToggle] = useState(false);
@@ -86,17 +87,38 @@ const ProblemStatement = () => {
   );
 };
 
-const ProblemStatementCard = ({ title, toggleFunc, toggle }) => (
-  <div className="problemStatement-item">
-    <div>
-      <p>{title}</p>
-      <textarea name="" className={`${toggle ? '' : 'hide'}`}></textarea>
-    </div>
+const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
+  const variants = {
+    open: { height: '110px' },
+    closed: { height: '0px' },
+  };
 
-    <button onClick={() => toggleFunc(!toggle)}>
-      <img src={downArrow} alt="" /> More
-    </button>
-  </div>
-);
+  return (
+    <div className="problemStatement-item">
+      <div>
+        <p>{title}</p>
+
+        <AnimatePresence>
+          {toggle && (
+            <motion.div
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={variants}
+              style={{ width: 300, border: '1.5px solid gray', borderRadius: 10, overflow: 'hidden', marginBottom: '1rem' }}
+              transition={{ duration: 0.3, exit: { duration: 0.1 } }}
+            >
+              <textarea />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      <button onClick={() => toggleFunc(!toggle)}>
+        <img src={downArrow} alt="" /> More
+      </button>
+    </div>
+  );
+};
 
 export default ProblemStatement;

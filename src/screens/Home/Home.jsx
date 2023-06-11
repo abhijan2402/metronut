@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import Form from '../FormModal/Form'
 import './Home.css'
 import Navbar from '../../components/navbar/Navbar'
@@ -9,13 +9,25 @@ import Mission from '../../components/Mission&Vision/Mission';
 import VIsion from '../../components/Mission&Vision/VIsion';
 import Landing from '../../components/landing/Landing';
 import ProblemStatement from '../../components/ProblemStatement/ProblemStatement';
-import Footer from '../../components/FooterComp/Footer';
 function Home() {
     const [FormActive, setFormActive] = useState(false)
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setIsLoading(false);
+        }, 2000); // Delay before opening the spinner (in milliseconds)
+    
+        return () => clearTimeout(timer);
+      }, []);
+
+      if(isLoading) (
+        <div>Loading...</div>
+      )
     return (
 
         <>
-            <Navbar />
+            
             <Landing />
             {/* <Enroll/> */}
             <Mission />
