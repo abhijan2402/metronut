@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import {logo1} from '../../assets'
+import { logo1 } from '../../assets'
 
 const Navbar = () => {
   return (
@@ -30,7 +30,7 @@ const Navbar = () => {
           <Link to={'/career-mentorship'}>Career Mentorship</Link>
         </li>
         <li>
-          <Link to={'/metronut'}>About Us</Link>
+          <Link to={'/About'}>About Us</Link>
         </li>
       </ul>
 

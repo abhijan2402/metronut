@@ -1,0 +1,54 @@
+.AboutMainDiv {
+    width: 100%;
+}
+
+.AboutInnerDiv {
+    text-align: center;
+}
+
+.AboutTitle {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.AboutTitleInner {
+    margin: auto;
+    width: auto;
+    width: 30%;
+    text-align: center;
+    font-size: 23px;
+    color: black;
+    font-weight: 600;
+}
+
+.MidAboutSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.MidAbSec1 {
+    width: 40%;
+}
+
+.MidAbSec2 {
+    width: 59%;
+    text-align: center;
+}
+
+.MidAbSec2 h1 {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.MidAbSec2 p {
+    margin: auto;
+    width: auto;
+    font-size: 23px;
+    color: rgb(48, 47, 47);
+    margin-top: 5%;
+    font-weight: 400;
+    width: 70%;
+}
