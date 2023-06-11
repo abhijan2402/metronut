@@ -1,0 +1,127 @@
+.FooterMainDIv {
+    background-color: rgb(7, 7, 82);
+    width: 100%;
+    position: relative;
+    /* bottom: 10%; */
+    border: 1px solid white;
+}
+
+.FooterHeader {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.FooterHeader h2 {
+    color: white;
+    margin: 1% 0%;
+}
+
+.FooterHeader p {
+    color: white;
+    /* border: 1px solid white; */
+    margin: auto;
+    width: auto;
+    width: 40%;
+    font-size: 20px;
+}
+
+.FooterBtnDiv {
+    padding-top: 2%;
+    /* border: 1px solid white; */
+    margin: auto;
+    width: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.FooterBtn1 {
+    background-color: rgb(255, 129, 11);
+    color: white;
+    width: 40%;
+    border-radius: 4px;
+    border: 0px solid white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 3px 20px;
+}
+
+.FooterBtn2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 40%;
+    border-radius: 4px;
+    border: 0px solid white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 3px 10px;
+}
+
+.FooterContentDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% auto;
+}
+
+.FooterContentDiv1 {
+    width: 24%;
+    text-align: center;
+}
+
+.LogoFooter {
+    width: 50%;
+    height: 45%
+}
+
+.FooterContentDiv1 p {
+    color: white;
+}
+
+.FooterContentDiv2 {
+    width: 24%;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.InnerFooterList2 {
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.InnerFooterList2 ul li {
+    margin: 6px auto;
+}
+
+/* .UlFooter li{
+    margin:;
+} */
+
+.FooterContentDiv2 h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 7%;
+    padding-left: 10%;
+}
+
+.FooterContentDiv3 {
+    width: 24%;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.FooterContentDiv3 h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 7%;
+    padding-left: 10%;
+}
+
+.FooterContentDiv4 {
+    width: 24%;
+    color: white;
+    /* border: 1px solid white; */
+    text-align: center;
+}

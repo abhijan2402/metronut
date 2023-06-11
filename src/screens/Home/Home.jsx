@@ -9,6 +9,7 @@ import Mission from '../../components/Mission&Vision/Mission';
 import VIsion from '../../components/Mission&Vision/VIsion';
 import Landing from '../../components/landing/Landing';
 import ProblemStatement from '../../components/ProblemStatement/ProblemStatement';
+import Footer from '../../components/FooterComp/Footer';
 function Home() {
     const [FormActive, setFormActive] = useState(false)
     return (
@@ -21,6 +22,7 @@ function Home() {
             <VIsion />
 
             <ProblemStatement />
+            {/* <Footer /> */}
             {/* // <div className='HomeMainDiv'>
         //     {
         //         FormActive ?
