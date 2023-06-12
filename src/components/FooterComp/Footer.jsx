@@ -41,14 +41,16 @@ function Footer() {
                             <li>About us</li>
                             <li>Contact us</li>
                             <li>Privacy Policy</li>
-                            <li>Terms&Condition</li>
+                            <li>Terms &Condition</li>
                         </ul>
                     </div>
                 </div>
                 <div className='FooterContentDiv4'>
                     <h3>Contact Us</h3>
-                    <p>mentornut@gmail.com</p>
-                    <p>834565556</p>
+                    <div className='FooterDivContact'>
+                        <p>mentornut@gmail.com</p>
+                        <p>834565556</p>
+                    </div>
                     <div className='FooterSocialMedia'>
                         <div className='OuterDivImageLogos'>
                             <a href="#" target="window">

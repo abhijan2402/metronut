@@ -46,3 +46,40 @@
     margin-top: 2%;
     text-align: center;
 }
+
+@media screen and (min-width: 400px) and (max-width:800px) {
+    .MissionMainDiv {
+        margin: auto;
+        width: auto;
+        height: 19rem;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .MissonDesc p {
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width: 200px) and (max-width:400px) {
+    .MissionMainDiv {
+        margin: auto;
+        width: auto;
+        height: 19rem;
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    .MissonDesc p {
+        font-size: 15px;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+}

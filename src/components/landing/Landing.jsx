@@ -30,7 +30,7 @@ const Landing = () => {
         that you can use to find your perfect match
       </p>
 
-      <div className="container px-4 py-3 d-flex gap-3 align-items-center" style={{ backgroundColor: '#fff', marginTop: '1rem', borderRadius: '1.2rem' }}>
+      {/* <div className="container px-4 py-3 d-flex gap-3 align-items-center" style={{ backgroundColor: '#fff', marginTop: '1rem', borderRadius: '1.2rem' }}>
         <div className='d-flex align-items-center justify-content-between landing-numbers'>
           <div className='d-flex align-items-center gap-3'>
             <img src={userFill} alt="" />
@@ -49,7 +49,7 @@ const Landing = () => {
           </div>
         </div>
 
-        <div className='vr80' />
+         <div className='vr80' />
 
           <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <h3 className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <h3 style={{color: '#000'}}>like</h3></h3> </h3>
 
@@ -60,8 +60,8 @@ const Landing = () => {
           <img width={50} height={50} src={roorkee} alt="" />
           <img width={50} height={50} src={kharappur} alt="" />
           <img width={50} height={50} src={delhi} alt="" />
-        </div>
-      </div>
+        </div> 
+      </div> */}
     </div>
   );
 };
