@@ -4,7 +4,7 @@ import "./Session.css";
 const Session = () => {
   return (
     <>
-      <div className="SessionContainer">
+      <div className="SessionContainer rounded">
         <div className="Session-Content">
           <div className="container" id="Session-ContentWrapper">
             <div className="row">

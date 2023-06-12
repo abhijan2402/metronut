@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link className={`${pathname === '/metronut' && 'activeLink'}`} to={'/metronut'}>Home</Link>
         </li>
         <li>
-          <Link to={'/metronut/Enroll'}>Enroll</Link>
+          <Link className={`${pathname === '/metronut/Enroll' && 'activeLink'}`} to={'/metronut/Enroll'}>Enroll</Link>
         </li>
         <li>
           <Link to={'/metronut/why-metorship'}>Why Mentorship</Link>
