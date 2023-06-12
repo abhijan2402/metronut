@@ -94,6 +94,8 @@
 
 .InnerFooterList2 ul li {
     margin: 6px auto;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* .UlFooter li{
