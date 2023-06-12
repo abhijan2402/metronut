@@ -1,0 +1,81 @@
+.VCMainDiv {
+    width: 100%;
+}
+
+.VCInnerdiv {
+    margin: auto;
+    width: auto;
+    width: 60%
+}
+
+.TitleVC {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.TitleVC H1 {
+    align-self: center;
+    text-align: center;
+}
+
+.VCH1s {
+    color: #ff6600;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.VCVideoSectioninner1 {
+    width: 65%;
+    border: 2px solid rgb(0, 0, 0);
+    height: 18rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.VCVideoSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.VCVideoSectioninner2 {
+    width: 34%;
+}
+
+.VCVideoSectionPart2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.VideoDesc {
+    margin: auto;
+    width: auto;
+    padding: auto;
+    border: 1px solid black;
+    padding: 1px 5% 1px 5%;
+    background-color: white;
+    margin-top: 6%;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 60%;
+}
+
+.VideoPlay {
+    border: 1px solid black;
+    background-color: white;
+    padding: 1px 5% 1px 5%;
+    margin-top: 6%;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+}
