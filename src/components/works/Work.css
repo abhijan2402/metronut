@@ -1,0 +1,116 @@
+.work-card-group {
+    margin-top: 6rem;
+}
+
+.work-card {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 250px;
+}
+
+.work-card-img {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 5;
+}
+
+.work-card-img img {
+    width: 100%;
+    height: 92%;
+    object-fit:contain;
+}
+
+.work-card-box {
+   width: 80%;
+    background: url('../../assets//images/work-background.svg');
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    flex-direction: column;
+}
+
+
+.work-card-details {
+    width: 70%;
+}
+
+
+.work-card-details-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.work-card-details-heading p {
+    background-color: #ff6600;
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.work-card-details-heading h2 {
+    color: #ff6600;
+    font-size: 1.5rem;
+    font-size: 700;
+}
+
+.work-card-details-desc {
+    margin-top: 1rem;
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.work-card-reverse {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 250px;
+}
+.work-card-reverse .work-card-img {
+    left: 30%;
+    width: 100%;
+}
+
+.work-card-reverse .work-card-box {
+    width: 100%;
+     background: url('../../assets//images/work-background2.svg');
+     background-repeat: no-repeat;
+     background-size:contain;
+     justify-content: flex-end;
+     align-items: flex-start;
+     padding-left: 5rem;
+ }

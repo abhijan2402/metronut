@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { logo1 } from '../../assets'
 
 const Navbar = () => {
+  const {pathname} = window.location
   return (
     <nav className="navbar container-fluid">
       <div className="brand">
@@ -15,22 +16,22 @@ const Navbar = () => {
 
       <ul className='navabr-links'>
         <li>
-          <Link className='activeLink' to={'/metronut'}>Home</Link>
+          <Link className={`${pathname === '/metronut' && 'activeLink'}`} to={'/metronut'}>Home</Link>
         </li>
         <li>
-          <Link to={'/Enroll'}>Enroll</Link>
+          <Link className={`${pathname === '/enroll' && 'activeLink'}`} to={'/enroll'}>Enroll</Link>
         </li>
         <li>
-          <Link to={'/why-metorship'}>Why Mentorship</Link>
+          <Link className={`${pathname === '/why-metorship' && 'activeLink'}`} to={'/why-metorship'}>Why Mentorship</Link>
         </li>
         <li>
-          <Link to={'/neet-mentorship'}>NEET Mentorship</Link>
+          <Link className={`${pathname === '/neet-mentorship' && 'activeLink'}`} to={'/neet-mentorship'}>NEET Mentorship</Link>
         </li>
         <li>
-          <Link to={'/career-mentorship'}>Career Mentorship</Link>
+          <Link className={`${pathname === '/career-mentorship' && 'activeLink'}`} to={'/career-mentorship'}>Career Mentorship</Link>
         </li>
         <li>
-          <Link to={'/About'}>About Us</Link>
+          <Link className={`${pathname === '/about-us' && 'activeLink'}`} to={'/about-us'}>About Us</Link>
         </li>
       </ul>
 

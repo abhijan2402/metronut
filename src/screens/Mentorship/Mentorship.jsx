@@ -11,10 +11,12 @@ import sales from "../../assets/sales.json";
 import team from "../../assets/team.json";
 import thinking from "../../assets/thinking.json";
 import Courses from "../../components/Courses/Courses"
+import Navbar from '../../components/navbar/Navbar'
 
 const Mentorship = () => {
   return (
     <>
+    <Navbar />
       <div className="mentorContianer">
         <div className="mentorContent">
           <div className="container-fluid" id="container">

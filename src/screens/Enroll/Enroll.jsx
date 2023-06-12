@@ -1,5 +1,6 @@
 import React from "react";
 import "./Enroll.css";
+import Navbar from '../../components/navbar/Navbar'
 
 const Enroll = () => {
   function togglehide() {
@@ -17,6 +18,7 @@ const Enroll = () => {
 
   return (
     <>
+    <Navbar />
       <div className="enroll-content-container">
         <div className="enroll-maincontainer">
           <h1>Lets make this your best investment</h1>

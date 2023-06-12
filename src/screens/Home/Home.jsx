@@ -9,6 +9,8 @@ import Mission from '../../components/Mission&Vision/Mission';
 import VIsion from '../../components/Mission&Vision/VIsion';
 import Landing from '../../components/landing/Landing';
 import ProblemStatement from '../../components/ProblemStatement/ProblemStatement';
+import Works from '../../components/works/Works';
+import Faq from '../../components/FAQ/Faq';
 function Home() {
     const [FormActive, setFormActive] = useState(false)
     const [isLoading, setIsLoading] = useState(true);
@@ -27,14 +29,19 @@ function Home() {
     return (
 
         <>
-            
+            <Navbar />
             <Landing />
             {/* <Enroll/> */}
             <Mission />
             <VIsion />
 
             <ProblemStatement />
-            {/* <Footer /> */}
+            <Works />
+
+            <div className="container" style={{display: 'flex', justifyContent: 'center'}}>
+
+            <Faq />
+            </div>
             {/* // <div className='HomeMainDiv'>
         //     {
         //         FormActive ?
