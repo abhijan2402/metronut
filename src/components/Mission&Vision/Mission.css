@@ -1,12 +1,13 @@
 .MissionMainDiv {
     border: 2px solid rgb(20, 20, 20);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 8px;
     margin-top: 2%;
+    height: 18rem
 }
 
 .MissionTextDiv {
@@ -39,7 +40,7 @@
 }
 
 .MissonDesc p {
-    font-size: 30px;
+    font-size: 20px;
     color: black;
     font-weight: 700;
     margin-top: 2%;

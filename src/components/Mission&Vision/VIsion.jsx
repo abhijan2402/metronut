@@ -12,7 +12,7 @@ function VIsion() {
                 </div>
                 <div className='MissionTextDiv'>
                     <div className='MissionTitle'>
-                        <h1>Our Mission</h1>
+                        <h1>Our Vision</h1>
                     </div>
                     <div className='MissonDesc'>
                         {/* <p style={{ margin: "auto", width: "auto", width: "80%", textAlign: "center", marginTop: "2%" }}>Remove the excuse that</p> */}
