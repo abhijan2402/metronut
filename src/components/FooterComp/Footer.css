@@ -94,11 +94,12 @@
 
 .InnerFooterList2 ul li {
     margin: 6px auto;
+    list-style: none;
 }
 
-/* .UlFooter li{
-    margin:;
-} */
+.UlFooter li{
+    list-style: none;
+}
 
 .FooterContentDiv2 h3 {
     text-align: center;
