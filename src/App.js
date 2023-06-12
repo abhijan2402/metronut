@@ -12,9 +12,9 @@ function App() {
     <>
       <Routes>
         <Route path='/metronut' element={<Home />} />
-        <Route path='/enroll' element={<Enroll />} />
-        <Route path='/why-metorship' element={<Mentorship />} />
-        <Route path='/about-us' element={<About />} />
+        <Route path='/metronut/Enroll' element={<Enroll />} />
+        <Route path='/metronut/why-metorship' element={<Mentorship />} />
+        <Route path='/metronut/About' element={<About />} />
       </Routes>
 
       <Footer />
