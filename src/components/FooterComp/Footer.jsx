@@ -49,6 +49,33 @@ function Footer() {
                     <h3>Contact Us</h3>
                     <p>mentornut@gmail.com</p>
                     <p>834565556</p>
+                    <div className='FooterSocialMedia'>
+                        <div className='OuterDivImageLogos'>
+                            <a href="#" target="window">
+                                <img src='https://cdn-icons-png.flaticon.com/128/20/20837.png' alt='' className='ImageSociaLogos' />
+                            </a>
+                        </div>
+                        <div className='OuterDivImageLogos'>
+                            <a href="#">
+                                <img src='https://cdn-icons-png.flaticon.com/128/733/733635.png' alt='' className='ImageSociaLogos' />
+                            </a>
+                        </div>
+                        <div className='OuterDivImageLogos'>
+                            <a href="#">
+                                <img src='https://cdn-icons-png.flaticon.com/128/1384/1384028.png' alt='' className='ImageSociaLogos' />
+                            </a>
+                        </div>
+                        <div className='OuterDivImageLogos'>
+                            <a href="#">
+                                <img src='https://cdn-icons-png.flaticon.com/128/61/61109.png' alt='' className='ImageSociaLogos' />
+                            </a>
+                        </div>
+                        <div className='OuterDivImageLogos'>
+                            <a href="#">
+                                <img src='https://cdn-icons-png.flaticon.com/128/1384/1384031.png' alt='' className='ImageSociaLogos' />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

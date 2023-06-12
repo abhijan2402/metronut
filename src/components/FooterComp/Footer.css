@@ -126,3 +126,31 @@
     /* border: 1px solid white; */
     text-align: center;
 }
+
+.FooterSocialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: auto;
+    width: 100%;
+}
+
+.ImageSociaLogos {
+    width: 90%;
+    height: 90%;
+}
+
+.OuterDivImageLogos {
+    margin: auto;
+    width: auto;
+    background-color: white;
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    padding: 6px;
+    /* margin-left: 2%;
+    margin-right: 2%; */
+}

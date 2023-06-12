@@ -11,6 +11,7 @@ function About() {
         <>
         <Navbar />
         <div className='AboutMainDiv'>
+            <Navbar />
             <div className='AboutInnerDiv'>
                 <p className='AboutTitle'>Know Us Better</p>
                 <p className='AboutTitleInner'>Powered by mentors from IIT
