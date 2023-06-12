@@ -94,6 +94,10 @@
 
 .InnerFooterList2 ul li {
     margin: 6px auto;
+<<<<<<< HEAD
+=======
+    text-decoration: none;
+>>>>>>> AJ
     list-style: none;
 }
 

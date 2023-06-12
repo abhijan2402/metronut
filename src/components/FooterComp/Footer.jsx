@@ -37,7 +37,7 @@ function Footer() {
                 <div className='FooterContentDiv3'>
                     <h3>Company</h3>
                     <div className='InnerFooterList2'>
-                        <ul >
+                        <ul>
                             <li>About us</li>
                             <li>Contact us</li>
                             <li>Privacy Policy</li>
