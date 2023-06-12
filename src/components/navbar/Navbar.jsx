@@ -18,19 +18,19 @@ const Navbar = () => {
           <Link className='activeLink' to={'/metronut'}>Home</Link>
         </li>
         <li>
-          <Link to={'/Enroll'}>Enroll</Link>
+          <Link to={'/metronut/Enroll'}>Enroll</Link>
         </li>
         <li>
-          <Link to={'/why-metorship'}>Why Mentorship</Link>
+          <Link to={'/metronut/why-metorship'}>Why Mentorship</Link>
         </li>
         <li>
-          <Link to={'/neet-mentorship'}>NEET Mentorship</Link>
+          <Link to={'/metronut/neet-mentorship'}>NEET Mentorship</Link>
         </li>
         <li>
-          <Link to={'/career-mentorship'}>Career Mentorship</Link>
+          <Link to={'/metronut/career-mentorship'}>Career Mentorship</Link>
         </li>
         <li>
-          <Link to={'/About'}>About Us</Link>
+          <Link to={'/metronut/About'}>About Us</Link>
         </li>
       </ul>
 

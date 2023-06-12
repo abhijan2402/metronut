@@ -14,9 +14,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/metronut' element={<Home />} />
-        <Route path='/Enroll' element={<Enroll />} />
-        <Route path='/why-metorship' element={<Mentorship />} />
-        <Route path='/About' element={<About />} />
+        <Route path='/metronut/Enroll' element={<Enroll />} />
+        <Route path='/metronut/why-metorship' element={<Mentorship />} />
+        <Route path='/metronut/About' element={<About />} />
       </Routes>
 
       <Footer />
