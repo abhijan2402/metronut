@@ -1,0 +1,12 @@
+.ball {
+    transform: rotate(180deg);
+}
+
+
+.ball-dot {
+    width: 2px;
+    /* background-color: red; */
+    border-left: 10px dotted blue;
+    height: 50%;
+    margin: auto;
+}

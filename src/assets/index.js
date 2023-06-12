@@ -11,8 +11,10 @@ import madras from './images/IIT_Madras_Logo.svg.png';
 import bombay from './images/Indian_Institute_of_Technology_Bombay_Logo.svg.png';
 import delhi from './images/Indian_Institute_of_Technology_Delhi_Logo.svg.png';
 import team from './images/team checklist-pana.svg';
+import ball from './images/ball.png'
 
 export {
+  ball,
   logo1,
   logo2,
   logo3,
