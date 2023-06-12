@@ -12,6 +12,10 @@ import bombay from './images/Indian_Institute_of_Technology_Bombay_Logo.svg.png'
 import delhi from './images/Indian_Institute_of_Technology_Delhi_Logo.svg.png';
 import team from './images/team checklist-pana.svg';
 import ball from './images/ball.png'
+import check1 from './images/check-list1.png'
+import check2 from './images/check-list2.png'
+import check3 from './images/check-list3.png'
+import check4 from './images/check-list4.png'
 
 export {
   ball,
@@ -28,4 +32,8 @@ export {
   bombay,
   delhi,
   team,
+  check1,
+  check2,
+  check3,
+  check4
 };

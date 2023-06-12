@@ -1,12 +1,73 @@
-.ball {
-    transform: rotate(180deg);
+
+
+.dot {
+    width: 2px;
+    border-left: 5px dotted #f60;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+
 }
 
+.check-list-para {
+    background: linear-gradient(90deg, #eac7cc, #f2dbcb);
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+}
 
-.ball-dot {
-    width: 2px;
-    /* background-color: red; */
-    border-left: 10px dotted blue;
-    height: 50%;
-    margin: auto;
+.check-list-para h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.check-list-para p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: rgb(50, 49, 49);
+    font-weight: 500;
+}
+
+.check-list-header {
+    align-items: center;
+    display: flex;
+    margin-bottom: 3rem;
+}
+.check-list-header h2 {
+    background-color: #f60;
+    border: 2px solid lightgray;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.check-list-icon-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.check-list-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #f60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+
+}
+
+.check-list-icon img {
+    width: 70%;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 2px;
+    user-select: none;
 }
