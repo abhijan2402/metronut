@@ -4,9 +4,12 @@ import Team from '../../assets/images/Team.json'
 import Story from '../../assets/images/Story.json'
 import VisMiss from '../../assets/images/VisMiss.json'
 import Lottie from "lottie-react";
+import Navbar from '../../components/navbar/Navbar'
 
 function About() {
     return (
+        <>
+        <Navbar />
         <div className='AboutMainDiv'>
             <div className='AboutInnerDiv'>
                 <p className='AboutTitle'>Know Us Better</p>
@@ -109,6 +112,7 @@ function About() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

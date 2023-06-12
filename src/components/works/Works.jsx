@@ -3,7 +3,7 @@ import './Work.css';
 
 const Works = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" style={{ overflowX: 'hidden' }}>
       <h1
         className="text-center pt-5"
         style={{ fontSize: '3rem', fontWeight: '700' }}
