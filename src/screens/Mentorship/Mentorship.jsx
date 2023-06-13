@@ -16,7 +16,7 @@ import Navbar from '../../components/navbar/Navbar'
 const Mentorship = () => {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="mentorContianer">
         <div className="mentorContent">
           <div className="container-fluid" id="container">
@@ -174,9 +174,9 @@ const Mentorship = () => {
             </div>
 
             <div className="row" id="content_5">
-                <div className="col-12">
-                  <Courses/>
-                </div>
+              <div className="col-12">
+                <Courses />
+              </div>
             </div>
 
             <div id="Section_6">

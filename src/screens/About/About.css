@@ -56,7 +56,7 @@
 
 .MidAbSec1inner1 {
     background-color: rgb(253, 128, 128);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     height: 30rem;
@@ -97,4 +97,47 @@
     width: 70%;
     text-align: justify;
     line-height: 1.8rem;
+}
+
+@media screen and (min-width: 250px) and (max-width:400px) {
+
+    .MidAbSec2 p {
+        font-size: 15px;
+        line-height: none;
+    }
+
+    .MidAbSec1 {
+        width: 40%;
+    }
+
+    .MidAbSec1inner {
+        background-color: rgb(84, 84, 255);
+        margin-left: -15%;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        height: 30rem;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Mid-section-Image {
+        width: 100%;
+        margin-right: -20%;
+        height: 40%;
+        /* margin-top: 25%; */
+    }
+
+    .Mid-section-Image1 {
+        width: 100%;
+        margin-left: -20%;
+        height: 40%;
+        /* margin-top: 25%; */
+    }
+
+    .AboutTitleInner {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
 }
