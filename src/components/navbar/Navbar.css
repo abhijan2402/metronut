@@ -152,4 +152,7 @@
         width: 100%;
     }
     
+    .navbar {
+        padding: 0 1.5rem;
+    }
 }

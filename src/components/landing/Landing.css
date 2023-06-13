@@ -1,163 +1,268 @@
 .landing-container {
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin: auto;
-    margin-top: 4rem;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
 }
 
 .landing-container h1 {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
-    color: #000000;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 5rem;
 }
 
-
+.landing-sub-header {
+  font-size: 1.8rem;
+  color: #000000;
+  line-height: 1rem;
+  text-align: center;
+}
 
 .landing-price {
-    display: flex;
-    background-color: #ff6600;
-    color: #000000;
-    font-size: 2rem;
-    margin-top: 1rem;
-    padding:  0.5rem 1.3rem;
-    border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6600;
+  color: #000000;
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.7rem;
 }
 
 .landing-price h2:last-child {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .landing-price h2:nth-child(2) {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-
 
 .stick-line {
-    width: 103%;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
+  width: 103%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
 }
 
-.landing-numbers{
-    width: 35%;
-     padding-right: 2rem;
+.landing-trail {
+  color: #000000;
+  text-align: center;
+  margin-top: 3;
+}
+
+.landing-numbers {
+  width: 35%;
+  padding-right: 2rem;
 }
 
 .landing-numbers img {
-    background-color: #dfedff;
-    border-radius: 50%;
-    padding: 4px;
-    width: 50px;
-    height: 50px;
+  background-color: #dfedff;
+  border-radius: 50%;
+  padding: 4px;
+  width: 50px;
+  height: 50px;
 }
 
 .landing-numbers h3 {
-    font-weight: 700;
-    margin: 0;
+  font-weight: 700;
+  margin: 0;
 }
 
 .landing-numbers p {
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #000000;
-    margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 0;
 }
 
-
-
-.mentor-from, .mentor-from h3{
-    font-weight: 700;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
+.mentor-from,
+.mentor-from h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .mentor-from {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
-
 .collges {
-    margin-left: 2rem;
-    justify-content: space-between;
+  margin-left: 2rem;
+  justify-content: space-between;
 }
 
 .landing-rating {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .landing-rating .bi-star-fill {
-    color: #ffcf00;
-    font-size: 1.2rem;
+  color: #ffcf00;
+  font-size: 1.2rem;
 }
 
-
 .landing-rating-imges {
-    position: relative;
-    background-color: red;
-    display: flex;
-    align-items: center;
-    right: 2rem;
+  position: relative;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  right: 2rem;
 }
 
 .landing-rating-imges img {
-    width: 50px;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 50px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .landing-rating-imges img:first-child {
-    right: 2rem;
+  right: 2rem;
 }
 
 .landing-rating-imges img:nth-child(2) {
-    right: 2px;
+  right: 2px;
 }
 
 .landing-rating img:last-child {
-    left: -1.2rem;
+  left: -1.2rem;
 }
 
 .landing-rating-desc {
-    text-align: center;
+  text-align: center;
 }
 
 .landing-rating-desc h2 {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.landing-rating-desc p{
-    line-height: 1.5rem;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    color: #2e2e2e;
-    font-weight: 500;
-    font-size: 13px;
-    margin-left: 1.5rem;
+.landing-rating-desc p {
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 1.5rem;
 }
 
 .landing-vr {
-    width: 2px;
-    background-color: #000000;
-    height: 100%;
+  width: 2px;
+  background-color: #000000;
+  height: 100%;
+}
+
+@media screen and (max-width: 1255px) {
+  .landing-numbers {
+    width: 35%;
+    padding-right: 2rem;
+  }
+
+  .landing-vr {
+    display: none;
+  }
+
+  .landing-white-bar {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    width: 650px;
+  }
+
+  .landing-numbers {
+    display: flex;
+    justify-content: space-evenly !important;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .mentor-from {
+    margin-bottom: 1rem;
+  }
+
+  .landing-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .landing-sub-header {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .collges {
+    margin-left: 0;
+  }
+
+  .landing-trail {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .landing-sub-header {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  .landing-white-bar {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+
+    margin-bottom: 4rem;
+  }
+
+  .collges {
+    flex-wrap: wrap;
+  }
+
+  .landing-rating {
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .landing-price {
+    display: flex;
+    background-color: #ff6600;
+    flex-wrap: wrap;
+    color: #000000;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 0.7rem;
+  }
+
+  .landing-price h2:last-child {
+    color: #ffffff;
+  }
+
+  .landing-price h2:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 }
