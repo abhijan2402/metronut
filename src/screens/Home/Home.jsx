@@ -11,6 +11,9 @@ import Faq from '../../components/FAQ/Faq';
 import FounderDesk from '../../components/FounderDesk/FounderDesk';
 import CheckList from '../../components/CheckList/CheckList';
 import VideoContent from '../../components/YouTubeSection/VideoContent';
+import OurMentor from '../../components/OurMentor/OurMentor'
+import Meente from '../../components/Meente/Mentee'
+
 function Home() {
   const [FormActive, setFormActive] = useState(false)
   const [isLoading, setIsLoading] = useState(true);
@@ -31,11 +34,13 @@ function Home() {
     <>
       <Navbar />
       <Landing />
+      <Meente/>
       <Mission />
       <VIsion />
       <CheckList />
       <ProblemStatement />
       <Works />
+      <OurMentor/>
       <VideoContent />
       <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
 

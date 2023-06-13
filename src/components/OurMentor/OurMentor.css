@@ -1,0 +1,83 @@
+#popularMentor-header {
+  padding: 2% 3%;
+}
+#popularMentor-header h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 60px;
+  text-align: center;
+}
+#popularMentor-header h1 span {
+  color: orangered;
+}
+#popularMentor-btns {
+  display: flex;
+  justify-content: space-between;
+}
+#popularMentor-header .popularMentorbtn1 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-weight: 800;
+  font-size: 35px;
+  transition: all 0.5s;
+}
+#popularMentor-header .popularMentorbtn1:hover {
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#popularMentor-header .popularMentorbtn2 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-weight: 800;
+  font-size: 35px;
+  transition: all 0.5s;
+}
+#popularMentor-header .popularMentorbtn2:hover {
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#popularMentorImages {
+  margin-top: 2%;
+}
+#popularMentor-Images {
+  width: 25%;
+  height: 550px;
+}
+#popularMentor-Images-card {
+  border: 2px solid red;
+  border-radius: 15px;
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+#popularMentor-Images-card p {
+  font-weight: 700;
+  color: black;
+}
+#popularMentor-Images-card h5 {
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+#popularMentor-Images-card img {
+  height: 450px;
+  width: 260px;
+  border: 3px solid #000;
+  border-radius: 15px;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  width: 276px;
+}
+

@@ -10,6 +10,7 @@
     margin-top: 5%;
     width: 70%;
     background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -72,7 +73,7 @@ input{
     font-weight: bold;
 }
 
-span{
+.price-month span{
     font-weight: 400;
     font-size: 12px;
     color: gray;
@@ -112,6 +113,7 @@ span{
 
     width: 70%;
     background-color: #f4f6f6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     /* border: 2px solid red; */
     margin: 7% 0 5% 0;
     padding: 3% 4% 3% 4%;
