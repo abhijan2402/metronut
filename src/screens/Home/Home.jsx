@@ -29,7 +29,7 @@ function Home() {
   return (
 
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Landing />
       <Mission />
       <VIsion />

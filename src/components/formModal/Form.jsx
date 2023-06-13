@@ -1,10 +1,10 @@
 import React from 'react'
 import './Form.css'
-function Form() {
+function Form({ state }) {
     return (
         <div className='FormMainOuterDiv'>
             <div className='FormMainDiv'>
-                <div className='ImageCross'>
+                <div className='ImageCross' onClick={state}>
                     <img src='https://cdn-icons-png.flaticon.com/128/2976/2976286.png' className='FormImage' />
                 </div>
                 {/* <div> */}

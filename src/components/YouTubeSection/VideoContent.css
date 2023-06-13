@@ -168,4 +168,8 @@
         text-align: center;
         font-size: 22px;
     }
+
+    .VCInnerdiv {
+        width: 100%
+    }
 }

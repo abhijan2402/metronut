@@ -2,19 +2,24 @@
     margin: auto;
     width: auto;
     background-color: white;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
     border-radius: 10px;
-
+    z-index: 10;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    z-index: 11;
+    box-shadow: 2px 5px 5px 3px rgb(87, 85, 85);
 }
 
 .FormMainOuterDiv {
-    min-height: 100vh;
-    background-color: transparent;
+    /* min-height: 100vh;
+    background-color: transparent; */
     z-index: 20;
     width: 100%;
     display: flex;
@@ -62,6 +67,7 @@
 
 .ButtonFormDiv {
     margin: 4% 0%;
+    text-align: center;
 }
 
 .FormBtn {
