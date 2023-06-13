@@ -63,7 +63,7 @@ const Landing = () => {
           </div>
         </div>
 
-         <div className='vr80' />
+         <div className='landing-vr' />
 
           <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <h3 className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <h3 style={{color: '#000'}}>like</h3></h3> </h3>
 

@@ -155,3 +155,9 @@
     font-size: 13px;
     margin-left: 1.5rem;
 }
+
+.landing-vr {
+    width: 2px;
+    background-color: #000000;
+    height: 100%;
+}
