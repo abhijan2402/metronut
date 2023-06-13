@@ -30,7 +30,21 @@ const Landing = () => {
         that you can use to find your perfect match
       </p>
 
-      {/* <div className="container px-4 py-3 d-flex gap-3 align-items-center" style={{ backgroundColor: '#fff', marginTop: '1rem', borderRadius: '1.2rem' }}>
+      <div className='landing-rating'>
+        <div className='landing-rating-imges'>
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
+        </div>
+
+        <div className='landing-rating-desc'>
+          <h2><i class="bi bi-star-fill"></i> 4.6/5</h2>
+          <p>20+ mentor</p>
+        </div>
+      </div>
+
+
+      <div className="container px-4 py-3 d-flex gap-3 align-items-center" style={{ backgroundColor: '#fff', marginTop: '1rem', borderRadius: '1.2rem' }}>
         <div className='d-flex align-items-center justify-content-between landing-numbers'>
           <div className='d-flex align-items-center gap-3'>
             <img src={userFill} alt="" />
@@ -61,7 +75,7 @@ const Landing = () => {
           <img width={50} height={50} src={kharappur} alt="" />
           <img width={50} height={50} src={delhi} alt="" />
         </div> 
-      </div> */}
+      </div>
     </div>
   );
 };
