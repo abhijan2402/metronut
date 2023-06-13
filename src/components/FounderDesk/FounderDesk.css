@@ -1,21 +1,61 @@
 .frounder-desk-desc {
-    font-size: 1.2rem;
-    color: #000000;
-    font-weight: 500;
-    padding-bottom: 3rem;
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 500;
+  padding-bottom: 3rem;
 }
 
+.founder-desk-header, .founder-desk-header span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.founder-desk-header span{
+    color: #ff6600;
+}
 .founder-desc {
-    color: #000000;
-    font-weight: 600;
+  color: #000000;
+  font-weight: 600;
 }
 
 .bi-linkedin {
-    color: #0277b5;
+  color: #0277b5;
 }
 
 .founder-name {
-    font-size: 1.6rem;
-    font-weight: 700;
-    height: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 1.5rem;
+}
+
+.founder-desk-img {
+  width: 60%;
+}
+
+@media screen and (max-width: 993px) {
+    .founder-desc {
+        font-weight: 500;
+        margin-top: 2rem;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    
+  .founder-desk-img {
+    width: 40%;
+  }
+
+  .frounder-desk-desc {
+    text-align: justify;
+    color: #272626;
+  }
+
+  .founder-desk-header, .founder-desk-header span {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .founder-desc {
+    margin-top: 0rem;
+  }
 }

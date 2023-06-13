@@ -42,7 +42,7 @@ function Home() {
       <Works />
       <OurMentor/>
       <VideoContent />
-      <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
 
         <Faq />
       </div>
