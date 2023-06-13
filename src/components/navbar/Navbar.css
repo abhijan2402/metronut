@@ -3,16 +3,26 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
     padding: 0 3rem;
-    height: 120px;
+    height: 90px;
+}
+
+.navabr-links {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0;
 }
 .navabr-links li {
     list-style: none;
 }
 
+
+
 .brand img {
-    width: 200px;
+    width: 160px;
 }
 
 .navabr-links {
@@ -35,8 +45,111 @@
     padding: 0.7rem 2rem;
     font-size: 1rem;
     font-weight: 500;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .loginBtn:focus {
     outline: none;
+}
+
+.nav-login {
+    display: none;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.menu-bar i {
+    font-size: 2rem;
+    color: #ff6600;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+}
+
+.menu-bar i:hover {
+    scale: 1.1;
+
+}
+
+.disable-scroll {
+    overflow: hidden !important;
+    height: 100vh;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+
+  .nav-close {
+    display: none;
+  }
+
+@media screen and (max-width: 1255px) {
+
+    .brand img {
+        width: 150px;
+    }
+
+    .nav-login2 {
+        display: none;
+    }
+
+    .nav-login {
+        display: block;
+    }
+
+    .menu-bar {
+        display: flex;
+    }
+    .navabr-links {
+        flex-direction: column;
+        background-color: #ffffff;
+        height: 100vh;
+        width: 400px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    .navabr-links-outer {
+        background-color: rgba(0, 0, 0, 0.538);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+
+    .nav-close {
+        display: block;
+        border: none;
+        color: #ff6600;
+        background: none;
+        font-size: 1.8rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .navabr-links {
+        width: 100%;
+    }
+    
 }
