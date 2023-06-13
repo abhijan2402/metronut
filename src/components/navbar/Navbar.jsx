@@ -5,7 +5,7 @@ import { logo1 } from '../../assets';
 
 const Navbar = () => {
   const { pathname } = window.location;
-  const {width} = window.screen
+  const { width } = window.screen
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
     if (toggle) {
@@ -47,10 +47,10 @@ const Navbar = () => {
             <Link to={'/metronut/why-metorship'}>Why Mentorship</Link>
           </li>
           <li>
-            <Link to={'/metronut/neet-mentorship'}>NEET Mentorship</Link>
+            NEET Mentorship
           </li>
           <li>
-            <Link to={'/metronut/career-mentorship'}>Career Mentorship</Link>
+            Career Mentorship
           </li>
           <li>
             <Link to={'/metronut/About'}>About Us</Link>
