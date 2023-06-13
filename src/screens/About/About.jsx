@@ -21,7 +21,11 @@ function About() {
                 </div>
                 <div className='MidAboutSection'>
                     <div className='MidAbSec1'>
-                        <Lottie animationData={Story} style={{ width: "100%", height: "100%" }} />
+                        <div className='MidAbSec1inner'>
+                            <div className="Mid-section-Image">
+                                <Lottie animationData={Story} style={{ width: "100%", height: "100%" }} />
+                            </div>
+                        </div>
                     </div>
                     <div className='MidAbSec2'>
                         <h1>Our Story</h1>
@@ -78,14 +82,24 @@ function About() {
                         </p>
                     </div>
                     <div className='MidAbSec1'>
-                        <Lottie animationData={VisMiss} style={{ width: "100%", height: "100%" }} />
+                        <div className='MidAbSec1inner1'>
+                            <div className="Mid-section-Image1">
+                                <Lottie animationData={VisMiss} style={{ width: "100%", height: "100%" }} />
+                            </div>
+                        </div>
+                        {/* <Lottie animationData={VisMiss} style={{ width: "100%", height: "100%" }} /> */}
                     </div>
                 </div>
 
 
                 <div className='MidAboutSection'>
                     <div className='MidAbSec1'>
-                        <Lottie animationData={Team} style={{ width: "100%", height: "100%" }} />
+                        <div className='MidAbSec1inner'>
+                            <div className="Mid-section-Image">
+                                <Lottie animationData={Team} style={{ width: "100%", height: "100%" }} />
+                            </div>
+                        </div>
+                        {/* <Lottie animationData={Team} style={{ width: "100%", height: "100%" }} /> */}
                     </div>
                     <div className='MidAbSec2'>
                         <h1>Our Team</h1>
