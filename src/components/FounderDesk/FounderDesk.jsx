@@ -5,21 +5,19 @@ const FounderDesk = () => {
   return (
     <div className="container mt-5">
       <h1
-        className="text-center pt-5 pb-5"
-        style={{ fontSize: '3rem', fontWeight: '700' }}
+        className="text-center pt-5 pb-5 founder-desk-header"
       >
         From Our{' '}
-        <span style={{ fontSize: '3rem', fontWeight: '700', color: '#ff6600' }}>
+        <span >
           Founder's
         </span>{' '}
         Desk
       </h1>
 
       <div className="row mt-5 align-items-center">
-        <div className="col-3 text-center">
+        <div className="col-md-3 col-12 text-center">
           <img
-          className='rounded-circle'
-            width={'60%'}
+          className='rounded-circle founder-desk-img'
             src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
             alt=""
           />
@@ -27,7 +25,7 @@ const FounderDesk = () => {
           <p className='founder-desc'>B.tech IIT Bombay <a href="#" target='blank'><i class="bi bi-linkedin"></i></a></p>
         </div>
 
-        <div className="col-8">
+        <div className="col-md-8 col-12">
           <p className='mb-5 frounder-desk-desc'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod temporincididunt utlabore et dolore magna aliqua. Ut enim ad
