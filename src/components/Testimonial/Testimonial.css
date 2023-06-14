@@ -1,0 +1,98 @@
+.testimonial-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.testimonial-btn button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #ffffffa9;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.testimonial-btn button:focus {
+    outline: none;
+}
+
+.testimonial-btn button:active {
+    background-color: #fff;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+.tesimonial-img {
+    width: 60%;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.testimonial-desc {
+    font-weight: 600;
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+.testimonial-heading h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.testimonial-heading h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    .testimonial-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .testimonial-card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .testimonial-card {
+        width: 80%;
+    }
+
+    .testimonial-btn button {
+        width: 50px;
+        height: 50px;
+        
+        font-size: 2rem;
+       
+    }
+
+    .testimonial-heading h1 {
+        font-size: 2.5rem;
+    }
+    
+    .testimonial-heading h3 {
+        font-size: 1rem;
+    }
+    
+    
+}

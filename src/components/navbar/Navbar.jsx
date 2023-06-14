@@ -37,23 +37,23 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`${pathname === '/metronut/Enroll' && 'activeLink'}`}
-              to={'/metronut/Enroll'}
+              className={`${pathname === '/metronut/enroll' && 'activeLink'}`}
+              to={'/metronut/enroll'}
             >
               Enroll
             </Link>
           </li>
           <li>
-            <Link to={'/metronut/why-metorship'}>Why Mentorship</Link>
+            <Link className={`${pathname === '/metronut/why-metorship' && 'activeLink'}`} to={'/metronut/why-metorship'}>Why Mentorship</Link>
           </li>
           <li>
-            NEET Mentorship
+          <Link className={`${pathname === '/metronut/neet-metorship' && 'activeLink'}`} to={'/metronut/neet-metorship'}>NEET Mentorship</Link>
           </li>
           <li>
-            Career Mentorship
+          <Link className={`${pathname === '/metronut/career-mentorship' && 'activeLink'}`} to={'/metronut/career-mentorship'}>Career Mentorship</Link>
           </li>
           <li>
-            <Link to={'/metronut/About'}>About Us</Link>
+            <Link className={`${pathname === '/metronut/about' && 'activeLink'}`} to={'/metronut/about'}>About Us</Link>
           </li>
 
           <button className="loginBtn nav-login" type="button">

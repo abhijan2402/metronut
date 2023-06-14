@@ -13,6 +13,7 @@ import CheckList from '../../components/CheckList/CheckList';
 import VideoContent from '../../components/YouTubeSection/VideoContent';
 import OurMentor from '../../components/OurMentor/OurMentor'
 import Meente from '../../components/Meente/Mentee'
+import Testimonial from '../../components/Testimonial/Testimonial';
 
 function Home() {
   const [FormActive, setFormActive] = useState(false)
@@ -40,8 +41,9 @@ function Home() {
       <CheckList />
       <ProblemStatement />
       <Works />
-      <OurMentor/>
       <VideoContent />
+      <OurMentor/>
+      <Testimonial />
       <div style={{ display: 'flex', justifyContent: 'center' }}>
 
         <Faq />
