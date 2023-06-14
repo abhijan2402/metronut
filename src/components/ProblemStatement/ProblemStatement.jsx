@@ -15,7 +15,7 @@ const ProblemStatement = () => {
   const [statementNineToggle, setStatementNineToggle] = useState(false);
 
   return (
-    <div className="problemStatement-container">
+    <div className="container mt-5">
       <div className="problemStatement-heading">
         <h1>WE KNOW YOUR PROBLEM</h1>
         <p>Mentor Will Solve your All Problems</p>
@@ -78,8 +78,7 @@ const ProblemStatement = () => {
           />
         </div>
 
-        <div className="image-upload">
-          <input type="file" />
+        <div className="problem-img" style={{height: 400}}>
           <p>Image Related </p>
         </div>
       </div>
@@ -105,8 +104,8 @@ const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
               animate="open"
               exit="closed"
               variants={variants}
-              style={{ width: 300, border: '1.5px solid gray', borderRadius: 10, overflow: 'hidden', marginBottom: '1rem' }}
               transition={{ duration: 0.3, exit: { duration: 0.1 } }}
+              className='problem-statement-textArea-outer'
             >
               <textarea />
             </motion.div>

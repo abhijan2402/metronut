@@ -16,6 +16,8 @@ import check1 from './images/check-list1.png'
 import check2 from './images/check-list2.png'
 import check3 from './images/check-list3.png'
 import check4 from './images/check-list4.png'
+import background from './images/work-background.svg'
+import background2 from './images/work-background2.svg'
 
 export {
   ball,
@@ -35,5 +37,7 @@ export {
   check1,
   check2,
   check3,
-  check4
+  check4,
+  background,
+  background2
 };

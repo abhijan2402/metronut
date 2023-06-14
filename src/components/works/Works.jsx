@@ -1,42 +1,40 @@
 import React from 'react';
 import './Work.css';
+import Lottie from 'lottie-react';
+import target from '../../assets/target.json';
 
 const Works = () => {
   return (
     <div className="container mt-5" style={{ overflowX: 'hidden' }}>
-      <h1
-        className="text-center pt-5"
-        style={{ fontSize: '3rem', fontWeight: '700' }}
-      >
-        How{' '}
-        <span style={{ fontSize: '3rem', fontWeight: '700', color: '#ff6600' }}>
-          MentorNut
-        </span>{' '}
-        MentorShip Works
+      <h1 className="text-center pt-md-5 pb-5 founder-desk-header">
+        How <span>MentorNut</span> MentorShip Works
       </h1>
 
       <div className="container work-card-group gap-4">
-        <Card classname={'work-card'} />
-        <Card classname={'work-card-reverse'} />
-        <Card classname={'work-card'} />
-        <Card classname={'work-card-reverse'} />
-        <Card classname={'work-card'} />
-        <Card classname={'work-card-reverse'} />
+        <Card classname={'work-card'} sl={1} />
+        <Card classname={'work-card-reverse'} sl={2} />
+        <Card classname={'work-card'} sl={3} />
+        <Card classname={'work-card-reverse'} sl={4} />
+        <Card classname={'work-card'} sl={5} />
+        <Card classname={'work-card-reverse'} sl={6} />
       </div>
     </div>
   );
 };
 
-const Card = ({ classname }) => (
+const Card = ({ classname, sl }) => (
   <div className={`${classname}`}>
     <div className="work-card-img">
-      <img src="https://cdn-icons-png.flaticon.com/512/609/609046.png" alt="" />
+      <Lottie
+        animationData={target}
+        style={{ width: '100%', height: '100%' }}
+      />
     </div>
 
     <div className="work-card-box">
       <div className="work-card-details">
         <div className="work-card-details-heading">
-          <p>1</p>
+          <p>{sl}</p>
           <h2>Make Time for Your Kids</h2>
         </div>
 
