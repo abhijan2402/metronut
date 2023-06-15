@@ -2,6 +2,12 @@ import React from 'react';
 import './Work.css';
 import Lottie from 'lottie-react';
 import target from '../../assets/target.json';
+import support from '../../assets/support.json';
+import planning from '../../assets/planning.json';
+import updates from '../../assets/updates.json';
+import strategy from '../../assets/strategy.json';
+import approved from '../../assets/approved.json';
+import goal from '../../assets/goal.json';
 import Header from '../Header/Header'
 
 const Works = () => {
@@ -10,22 +16,22 @@ const Works = () => {
       <Header text1={'How'} text2={'MentorNut'} text3={'MentorShip Works'} />
 
       <div className="container work-card-group gap-4 mt-5 pt-3 pt-md-5">
-        <Card classname={'work-card'} sl={1} />
-        <Card classname={'work-card-reverse'} sl={2} />
-        <Card classname={'work-card'} sl={3} />
-        <Card classname={'work-card-reverse'} sl={4} />
-        <Card classname={'work-card'} sl={5} />
-        <Card classname={'work-card-reverse'} sl={6} />
+        <Card classname={'work-card'} sl={1} img={support} />
+        <Card classname={'work-card-reverse'} sl={2} img={planning} />
+        <Card classname={'work-card'} sl={3} img={updates} />
+        <Card classname={'work-card-reverse'} sl={4} img={strategy} />
+        <Card classname={'work-card'} sl={5} img={approved} />
+        <Card classname={'work-card-reverse'} sl={6} img={goal} />
       </div>
     </div>
   );
 };
 
-const Card = ({ classname, sl }) => (
+const Card = ({ classname, sl, img }) => (
   <div className={`${classname}`}>
     <div className="work-card-img">
       <Lottie
-        animationData={target}
+        animationData={img}
         style={{ width: '100%', height: '100%' }}
       />
     </div>
