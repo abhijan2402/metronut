@@ -1,82 +1,93 @@
 import React from "react";
 import "./OurMentor.css";
-
+import CardCarousel from "./CardCarousel";
 import mentor from "../../assets/mentor.jpg";
 
 const OurMentor = () => {
+
+  let box = document.querySelector(".cardCarousel");
+  console.log(box);
+  const btnprevious = () => {
+    let width = 0;
+    width = width + 500;
+    box.scrollLeft = box.scrollLeft - width;
+    console.log(width);
+  };
+  const btnnext = () => {
+    let width = 0;
+    width = width + 500;
+    box.scrollLeft = box.scrollLeft + width;
+    console.log(width);
+  };
+
+
   return (
     <>
-      <div className="popularMentor-container">
-        <div className="container" id="popularMentor-header">
-          <div className="col-12">
-            <h1>
-              Our Popular <span>Mentor</span>
-            </h1>
-          </div>
-
-          <div className="col-12" id="popularMentor-btns">
-            <button className="popularMentorbtn1">
-              <i class="bi bi-arrow-left"></i>
-            </button>
-            <button className="popularMentorbtn2">
-              <i class="bi bi-arrow-right"></i>
-            </button>
-          </div>
-
-          <div className="col-12" id="popularMentorImages">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col" id="popularMentor-Images">
-                <div class="card" id="popularMentor-Images-card">
-                  <img src={mentor} class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Vinay Kushwaha</h5>
-                    <p class="card-text text-center">
-                      IIT Bombay
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col" id="popularMentor-Images">
-                <div class="card" id="popularMentor-Images-card">
-                  <img src={mentor} class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Vinay Kushwaha</h5>
-                    <p class="card-text text-center">
-                      IIT Bombay
-                    </p>
-                  </div>
-                </div>
-              </div>
-             
-              <div class="col" id="popularMentor-Images">
-                <div class="card" id="popularMentor-Images-card">
-                  <img src={mentor} class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Vinay Kushwaha</h5>
-                    <p class="card-text text-center">
-                      IIT Bombay
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col" id="popularMentor-Images">
-                <div class="card" id="popularMentor-Images-card">
-                  <img src={mentor} class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Vinay Kushwaha</h5>
-                    <p class="card-text text-center">
-                      IIT Bombay
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
+      <div className="carousel">
+        <div className="heading">
+          <h1>
+            Our Popular <span>Mentors</span>{" "}
+          </h1>
+        </div>
+        <div className="carousel-buttons">
+          <button onClick={btnprevious}>
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button onClick={btnnext}>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+        <div className="cardCarousel">
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
+          <CardCarousel
+            image={mentor}
+            name="Vinay Kushwaha"
+            college="IIT Bombay"
+          />
         </div>
       </div>
     </>

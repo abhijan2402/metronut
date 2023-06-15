@@ -49,9 +49,9 @@
     background-color: rgb(234, 235, 236);
 }
 
-input {
+.courses img {
     margin-right: 8px;
-    cursor: pointer;
+    font-size: 20px;
 }
 
 
@@ -92,7 +92,7 @@ input {
 
 .price-month .btn {
     font-weight: 800;
-    font-size: 12px;
+    font-size: 15px;
     background-color: rgb(53, 53, 249);
     color: #fff;
     outline: none;
@@ -101,6 +101,14 @@ input {
     border-radius: 8px;
     margin-left: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.btn i{
+    margin-left: 5px;
 }
 
 .duration p {
@@ -137,6 +145,7 @@ input {
 .questions h1 {
     text-align: center;
 }
+
 
 
 
@@ -181,13 +190,51 @@ input {
     font-size: 12px;
 }
 
+@media only screen  and (max-width:1416px) {
+    .enroll-maincontainer {
+        width: 80%;
+    }
+    .cources-prices {
+        /* border: 2px solid green; */
+        margin-left: 1%;
+    }
+    .questions {
+        width: 80%;
+    }
+}
+@media only screen  and (max-width:1165px) {
+    .enroll-maincontainer {
+        width: 90%;
+    }
+    .cources-prices {
+        /* border: 2px solid green; */
+        margin-left: 1%;
+    }
+    .questions {
+        width: 90%;
+    }
+}
+@media only screen  and (max-width:1165px) {
+    .cources-prices {
+        /* border: 2px solid green; */
+        margin-left: 1%;
+    }
+    .enroll-content {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1% 1% 1% 1%;
+    }
+}
+
+
 @media screen and (min-width: 200px) and (max-width:800px) {
     .enroll-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1% 0% 1% 2%;
+        padding: 1% 1% 1% 1%;
     }
 
     .cources-prices {
