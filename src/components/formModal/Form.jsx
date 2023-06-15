@@ -17,14 +17,15 @@ function Form({ state }) {
                 throw alert("Please Enter Phone Number")
             if (classVal == "")
                 throw alert("Please Enter Class")
-            if (problem == "")
-                throw alert("Please Enter Problem Description")
             else {
+                const date = new Date();
                 const docRef = await addDoc(collection(db, "FormData"), {
                     Name: name,
                     Class: classVal,
                     Mobile: phoneNumber,
-                    Problem: problem
+                    Problem: problem,
+                    Date: date,
+                    Note: ""
                 }).then((res) => {
                     console.log("Document written with ID: ", res.id);
                     alert("Your Form submitted,We'll update shortly")
@@ -49,15 +50,15 @@ function Form({ state }) {
                 </div>
                 <div className='OuterFormDiv'>
                     <div className='InputMainDiv'>
-                        <label className='FormLabel'>Name</label>
+                        <label className='FormLabel'>Name *</label>
                         <input className="FormInput" type="text" onChange={(e) => { setname(e.target.value) }} />
                     </div>
                     <div className='InputMainDiv'>
-                        <label className='FormLabel'>Mobile</label>
+                        <label className='FormLabel'>Mobile *</label>
                         <input className="FormInput" type="text" onChange={(e) => { setphoneNumber(e.target.value) }} />
                     </div>
                     <div className='InputMainDiv'>
-                        <label className='FormLabel'>Class</label>
+                        <label className='FormLabel'>Class *</label>
                         <div className='InputradioDiv'>
                             <div className='InputInnerDivR'>
                                 <input type="radio" id="11th" name="11th" value="11th" onClick={(e) => { setclassVal(e.target.value) }} />
@@ -78,8 +79,8 @@ function Form({ state }) {
                         </div>
                     </div>
                     <div className='InputMainDiv'>
-                        <label className='FormLabel'>Problem</label>
-                        <textarea className="FormInput" type="text" rows="5" onChange={(e) => { setProblem(e.target.value) }} />
+                        <label className='FormLabel'>Problem (Optional)</label>
+                        <textarea placeholder='Kindly share your problem in brief' className="FormInput" type="text" rows="5" onChange={(e) => { setProblem(e.target.value) }} />
                     </div>
                     <div className='ButtonFormDiv'>
                         <button className='FormBtn' onClick={SubmitForm}>Submit</button>
