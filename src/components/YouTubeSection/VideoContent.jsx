@@ -1,13 +1,12 @@
 import React from 'react'
 import './VideoContent.css';
+import Header from '../Header/Header';
 function VideoContent() {
     return (
         <div clasName="VCMainDiv">
             <div className='VCInnerdiv'>
                 <div className='TitleVC'>
-                    <h1>Understand in</h1>
-                    <h1 className="VCH1s"> Better</h1>
-                    <h1> Way</h1>
+                    <Header text1={'Understand in'} text2={'Better'} text3={'Way'} />
                 </div>
                 <div className='TitleVC'>
                     <h3>Video Explaination</h3>

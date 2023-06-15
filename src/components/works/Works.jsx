@@ -2,13 +2,12 @@ import React from 'react';
 import './Work.css';
 import Lottie from 'lottie-react';
 import target from '../../assets/target.json';
+import Header from '../Header/Header'
 
 const Works = () => {
   return (
     <div className="container mt-5" style={{ overflowX: 'hidden' }}>
-      <h1 className="text-center pt-md-5 pb-5 founder-desk-header">
-        How <span>MentorNut</span> MentorShip Works
-      </h1>
+      <Header text1={'How'} text2={'MentorNut'} text3={'MentorShip Works'} />
 
       <div className="container work-card-group gap-4">
         <Card classname={'work-card'} sl={1} />

@@ -1,18 +1,11 @@
 import React from 'react';
 import './FounderDesk.css';
+import Header from '../Header/Header';
 
 const FounderDesk = () => {
   return (
     <div className="container mt-5">
-      <h1
-        className="text-center pt-5 pb-5 founder-desk-header"
-      >
-        From Our{' '}
-        <span >
-          Founder's
-        </span>{' '}
-        Desk
-      </h1>
+      <Header text1={'From Our'} text2={"Founder's"} text3={'Desk'} />
 
       <div className="row mt-5 align-items-center">
         <div className="col-md-3 col-12 text-center">

@@ -42,12 +42,17 @@
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
 }
 
 .problemStatement-item p {
   color: #000000;
   font-size: 1.2rem;
   font-weight: 500;
+  margin: 0;
 }
 
 .problemStatement-item button {
@@ -58,12 +63,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
-  border: 2px solid gray;
+  border: 2px solid #ff6600;
   background: none;
   border-radius: 2rem;
   font-size: 14px;
   font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+.problemStatement-item button:hover {
+  background-color: #ff6600;
 }
 
 .problemStatement-item button img {
@@ -75,8 +84,7 @@
   border: 1.5px solid gray;
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 1rem;
-  background-color: #fff;
+  margin-top: 1rem;
 }
 
 .problemStatement-item textarea {

@@ -1,16 +1,8 @@
 #popularMentor-header {
   padding: 2% 3%;
 }
-#popularMentor-header h1 {
-  text-transform: capitalize;
-  font-weight: 700;
-  letter-spacing: 5px;
-  font-size: 60px;
-  text-align: center;
-}
-#popularMentor-header h1 span {
-  color: orangered;
-}
+
+
 #popularMentor-btns {
   display: flex;
   justify-content: space-between;
@@ -74,6 +66,7 @@
   width: 260px;
   border: 3px solid #000;
   border-radius: 15px;
+  object-fit: cover;
 }
 .card-body {
   flex: 1 1 auto;

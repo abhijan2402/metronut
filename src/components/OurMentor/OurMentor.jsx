@@ -2,17 +2,15 @@ import React from "react";
 import "./OurMentor.css";
 
 import mentor from "../../assets/mentor.jpg";
+import Header from "../Header/Header";
 
 const OurMentor = () => {
   return (
     <>
       <div className="popularMentor-container">
         <div className="container" id="popularMentor-header">
-          <div className="col-12">
-            <h1>
-              Our Popular <span>Mentor</span>
-            </h1>
-          </div>
+            <Header text1={'Our Popular'} text2={'Mentor'} />
+          
 
           <div className="col-12" id="popularMentor-btns">
             <button className="popularMentorbtn1">

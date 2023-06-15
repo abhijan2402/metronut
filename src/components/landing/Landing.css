@@ -33,6 +33,8 @@
   margin-top: 1rem;
   padding: 0.5rem 1.3rem;
   border-radius: 0.7rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .landing-price h2:last-child {
@@ -212,6 +214,8 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
+
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -250,6 +254,7 @@
     margin-top: 1rem;
     padding: 0.5rem 1.3rem;
     border-radius: 0.7rem;
+    cursor: default;
   }
 
   .landing-price h2:last-child {
