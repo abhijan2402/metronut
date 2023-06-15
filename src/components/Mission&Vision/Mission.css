@@ -7,7 +7,8 @@
     background-color: white;
     border-radius: 8px;
     margin-top: 2%;
-    height: 18rem
+    height: 18rem;
+    box-shadow: 5px 5px 20px 2px #857e7e;
 }
 
 .MissionTextDiv {

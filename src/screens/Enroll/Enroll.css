@@ -12,6 +12,7 @@
     width: 70%;
     background-color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: 5px 5px 20px 2px #857e7e;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -107,7 +108,7 @@
     letter-spacing: 2px;
 }
 
-.btn i{
+.btn i {
     margin-left: 5px;
 }
 
@@ -138,6 +139,7 @@
     background-color: #f4f6f6;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     /* border: 2px solid red; */
+    box-shadow: 5px 5px 20px 2px #857e7e;
     margin: 7% 0 5% 0;
     padding: 3% 4% 3% 4%;
 }
@@ -190,35 +192,42 @@
     font-size: 12px;
 }
 
-@media only screen  and (max-width:1416px) {
+@media only screen and (max-width:1416px) {
     .enroll-maincontainer {
         width: 80%;
     }
+
     .cources-prices {
         /* border: 2px solid green; */
         margin-left: 1%;
     }
+
     .questions {
         width: 80%;
     }
 }
-@media only screen  and (max-width:1165px) {
+
+@media only screen and (max-width:1165px) {
     .enroll-maincontainer {
         width: 90%;
     }
+
     .cources-prices {
         /* border: 2px solid green; */
         margin-left: 1%;
     }
+
     .questions {
         width: 90%;
     }
 }
-@media only screen  and (max-width:1165px) {
+
+@media only screen and (max-width:1165px) {
     .cources-prices {
         /* border: 2px solid green; */
         margin-left: 1%;
     }
+
     .enroll-content {
         /* border: 2px solid red; */
         display: flex;
