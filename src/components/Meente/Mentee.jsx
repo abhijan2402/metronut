@@ -21,17 +21,17 @@ const Mentee = () => {
 
   return (
     <>
-      <div className="mentee-container">
+      <div className="mentee-container mt-5 mt-md-2">
         <div className="container-fluid">
           <div className="rows">
             <div className="col-12" id="mentee-header">
               <h1>Mentee Says"...</h1>
               <div className="menteecarousel-buttons">
                 <button onClick={btnprevious}>
-                  <i class="bi bi-arrow-left"></i>
+                  <i className="bi bi-arrow-left"></i>
                 </button>
                 <button onClick={btnnext}>
-                  <i class="bi bi-arrow-right"></i>
+                  <i className="bi bi-arrow-right"></i>
                 </button>
               </div>
             </div>

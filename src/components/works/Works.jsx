@@ -6,10 +6,10 @@ import Header from '../Header/Header'
 
 const Works = () => {
   return (
-    <div className="container mt-5" style={{ overflowX: 'hidden' }}>
+    <div className="container mt-5 pt-3 pt-md-5" style={{ overflowX: 'hidden' }}>
       <Header text1={'How'} text2={'MentorNut'} text3={'MentorShip Works'} />
 
-      <div className="container work-card-group gap-4">
+      <div className="container work-card-group gap-4 mt-5 pt-3 pt-md-5">
         <Card classname={'work-card'} sl={1} />
         <Card classname={'work-card-reverse'} sl={2} />
         <Card classname={'work-card'} sl={3} />

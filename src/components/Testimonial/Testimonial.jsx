@@ -3,7 +3,7 @@ import './Testimonial.css';
 
 const Testimonial = () => {
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5 pt-3 pt-md-5 mb-md-5 pb-5 pb-3">
       <div className="testimonial-heading">
         <h1 className="text-center">Testimonials</h1>
         <h3 className="text-center">
@@ -14,36 +14,36 @@ const Testimonial = () => {
           enim ad minim veniam.
         </h3>
       </div>
-      <div className="mt-5 pt-5">
+      <div className="mt-5 pt-2 pt-md-5">
         <div className="row">
           <div className="testimonial-btn">
             <button
-              class="testimonial-btn-prev"
+              className="testimonial-btn-prev"
               type="button"
               data-bs-target="#testimonial"
               data-bs-slide="prev"
             >
-              <i class="bi bi-arrow-left"></i>
+              <i className="bi bi-arrow-left"></i>
             </button>
 
             <button
-              class="testimonial-btn-next"
+              className="testimonial-btn-next"
               type="button"
               data-bs-target="#testimonial"
               data-bs-slide="next"
             >
-              <i class="bi bi-arrow-right"></i>
+              <i className="bi bi-arrow-right"></i>
             </button>
           </div>
           <div className="col-12">
             <div
               id="testimonial"
-              class="carousel slide"
+              className="carousel slide"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="testimonial-card card m-auto">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
                       src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
@@ -56,8 +56,8 @@ const Testimonial = () => {
                     </p>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="testimonial-card card m-auto">
+                <div className="carousel-item">
+                  <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
                       src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
@@ -69,8 +69,8 @@ const Testimonial = () => {
                     </p>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="testimonial-card card m-auto">
+                <div className="carousel-item">
+                  <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
                       src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"

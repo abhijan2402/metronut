@@ -7,7 +7,7 @@ const FounderDesk = () => {
     <div className="container mt-5">
       <Header text1={'From Our'} text2={"Founder's"} text3={'Desk'} />
 
-      <div className="row mt-5 align-items-center">
+      <div className="row mt-5  align-items-center">
         <div className="col-md-3 col-12 text-center">
           <img
           className='rounded-circle founder-desk-img'
@@ -15,7 +15,7 @@ const FounderDesk = () => {
             alt=""
           />
           <h2 className='founder-name'>Vinay Kushwaha</h2>
-          <p className='founder-desc'>B.tech IIT Bombay <a href="#" target='blank'><i class="bi bi-linkedin"></i></a></p>
+          <p className='founder-desc'>B.tech IIT Bombay <a href="#" target='blank'><i className="bi bi-linkedin"></i></a></p>
         </div>
 
         <div className="col-md-8 col-12">

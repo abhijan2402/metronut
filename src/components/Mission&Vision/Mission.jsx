@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 import target from '../../assets/target.json'
 function Mission() {
     return (
-        <div style={{ width: "100%" }}>
+        <div className='mt-5 pt-2 pt-md-5' style={{ width: "100%" }}>
             <div className='MissionMainDiv'>
                 <div className='MissionTextDiv'>
                     <div className='MissionTitle'>

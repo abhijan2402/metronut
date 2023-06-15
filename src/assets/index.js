@@ -18,6 +18,10 @@ import check3 from './images/check-list3.png'
 import check4 from './images/check-list4.png'
 import background from './images/work-background.svg'
 import background2 from './images/work-background2.svg'
+import checkin1 from './images/checkin1.png'
+import checkin2 from './images/checkin2.png'
+import checkin3 from './images/checkin3.png'
+import checkin4 from './images/checkin4.png'
 
 export {
   ball,
@@ -39,5 +43,9 @@ export {
   check3,
   check4,
   background,
-  background2
+  background2,
+  checkin1,
+  checkin2,
+  checkin3,
+  checkin4
 };

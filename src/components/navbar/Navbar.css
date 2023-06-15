@@ -100,7 +100,15 @@
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
 @media screen and (max-width: 1255px) {
+
+    .menu-large {
+        display: none;
+    }
 
     .brand img {
         width: 150px;
@@ -117,7 +125,7 @@
     .menu-bar {
         display: flex;
     }
-    .navabr-links {
+    .mobile-menu .navabr-links {
         flex-direction: column;
         background-color: #ffffff;
         height: 100vh;
@@ -131,7 +139,7 @@
         font-weight: 500;
     }
     
-    .navabr-links-outer {
+    .mobile-menu {
         background-color: rgba(0, 0, 0, 0.538);
         width: 100%;
         position: absolute;

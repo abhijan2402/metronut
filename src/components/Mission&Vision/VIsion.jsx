@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 import Vision from '../../assets/Vision.json'
 function VIsion() {
     return (
-        <div style={{ width: "100%" }}>
+        <div className='mb-5 pb-md-5 pb-3' style={{ width: "100%" }}>
             <div className='MissionMainDiv'>
                 <div className='MissionImageDiv'>
                     <Lottie animationData={Vision} style={{ width: "100%", height: "100%" }} />

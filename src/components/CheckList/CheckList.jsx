@@ -1,16 +1,16 @@
 import React from 'react';
 import './CheckList.css';
-import { check1, check2, check3, check4 } from '../../assets';
+import { check1, check2, check3, check4, checkin1, checkin2, checkin3, checkin4 } from '../../assets';
 
 const CheckList = () => {
   return (
-    <div className="container mt-5 pt-5">
+    <div className="container  mt-5 pt-5">
       <div className="problemStatement-heading">
         <h1>ARE YOU DOING THIS</h1>
         <p>Daily check list...</p>
       </div>
 
-      <div className="row mt-5 pt-5">
+      <div className="row checkin-container mt-5 pt-5">
         <div className="col-5 check-list-para">
           <h3>Making good notes Through lecture</h3>
           <p>
@@ -22,27 +22,24 @@ const CheckList = () => {
         </div>
 
         <div className="col-2 text-center check-list-icon-box">
-          <div className="check-list-icon">
-            <img src={check1} alt="" />
-          </div>
+
+          <img src={checkin1} alt="" />
           <div className="dot"></div>
         </div>
 
-        <div className="col-5 check-list-header">
+        <div className="col-5 check-list-header" style={{padding: 0}}>
           <h2>Making Good Notes</h2>
         </div>
 
         <div
           className="col-5 check-list-header"
-          style={{ justifyContent: 'flex-end' }}
+          style={{ justifyContent: 'flex-end', padding: 0 }}
         >
           <h2>Daily Revision</h2>
         </div>
 
         <div className="col-2 text-center check-list-icon-box">
-          <div className="check-list-icon">
-            <img src={check2} alt="" />
-          </div>
+        <img src={checkin2} alt="" />
           <div className="dot"></div>
         </div>
 
@@ -70,27 +67,23 @@ const CheckList = () => {
         </div>
 
         <div className="col-2 text-center check-list-icon-box">
-          <div className="check-list-icon">
-            <img src={check3} alt="" />
-          </div>
+        <img src={checkin3} alt="" />
           <div className="dot"></div>
         </div>
 
-        <div className="col-5 check-list-header">
+        <div className="col-5 check-list-header" style={{padding: 0}}>
           <h2>Question Practice</h2>
         </div>
 
         <div
           className="col-5 check-list-header"
-          style={{ justifyContent: 'flex-end' }}
+          style={{ justifyContent: 'flex-end', padding: 0 }}
         >
           <h2>Prorep Test Analysis</h2>
         </div>
 
         <div className="col-2 text-center check-list-icon-box">
-          <div className="check-list-icon">
-            <img src={check4} alt="" />
-          </div>
+        <img src={checkin4} alt="" />
         </div>
         <div
           className="col-5 check-list-para"

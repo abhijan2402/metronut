@@ -15,7 +15,7 @@ const ProblemStatement = () => {
   const [statementNineToggle, setStatementNineToggle] = useState(false);
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 pt-3 pt-md-5">
       <div className="problemStatement-heading">
         <h1>WE KNOW YOUR PROBLEM</h1>
         <p>Mentor Will Solve your All Problems</p>
@@ -93,7 +93,7 @@ const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
   };
 
   return (
-    <div className="problemStatement-item">
+    <div className="problemStatement-item pt">
       <div>
         <p>{title}</p>
 

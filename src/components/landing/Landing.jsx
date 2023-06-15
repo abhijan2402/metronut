@@ -38,7 +38,7 @@ const Landing = () => {
         </div>
 
         <div className='landing-rating-desc'>
-          <h2><i class="bi bi-star-fill"></i> 4.6/5</h2>
+          <h2><i className="bi bi-star-fill"></i> 4.6/5</h2>
           <p>20+ mentor</p>
         </div>
       </div>
@@ -65,7 +65,7 @@ const Landing = () => {
 
          <div className='landing-vr' style={{width: 2, height: 50, backgroundColor: '#000000'}} ></div>
 
-          <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <h3 className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <h3 style={{color: '#000'}}>like</h3></h3> </h3>
+          <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <span className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <span style={{color: '#000'}}>like</span></span> </h3>
 
         <div className='d-flex gap-2 gap-md-5 collges'>
           <img width={50} height={50} src={bombay} alt="" />

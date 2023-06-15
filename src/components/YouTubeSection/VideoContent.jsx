@@ -3,7 +3,7 @@ import './VideoContent.css';
 import Header from '../Header/Header';
 function VideoContent() {
     return (
-        <div clasName="VCMainDiv">
+        <div className="VCMainDiv">
             <div className='VCInnerdiv'>
                 <div className='TitleVC'>
                     <Header text1={'Understand in'} text2={'Better'} text3={'Way'} />

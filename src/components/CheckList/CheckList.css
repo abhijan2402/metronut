@@ -1,3 +1,8 @@
+.checkin-container {
+    width: 80%;
+    margin: auto;
+}
+
 .dot {
     width: 2px;
     border-left: 5px dotted #f60;
@@ -49,27 +54,25 @@
     justify-content: center;
     flex-direction: column;
 }
-.check-list-icon {
-    width: 70px;
-    height: 70px;
-    background-color: #f60;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    border-radius: 50%;
 
+
+.check-list-icon-box img {
+    width: 150px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2.5rem;
 }
 
-.check-list-icon img {
-    width: 70%;
-    margin: 0;
-    background-color: #ffffff;
-    border-radius: 50%;
-    padding: 2px;
-    user-select: none;
-}
+@media screen and (max-width: 1000px) {
+    .checkin-container {
+        width: 100%;
+    }
 
+    .check-list-icon-box img {
+        width: 120px;
+    }
+    
+}
 
 @media screen and (max-width: 783px) {
     .check-list-para {
@@ -98,6 +101,10 @@
     .check-list-header h2 {
         padding: 0.5rem 1rem;
         font-size: 1.3rem;
+    }
+
+    .check-list-icon-box img {
+        width: 105px;
     }
 }
 
@@ -128,5 +135,9 @@
     .check-list-header h2 {
         padding: 0.5rem 1rem;
         font-size: 1.2rem;
+    }
+
+    .check-list-icon-box img {
+        width: 65px;
     }
 }

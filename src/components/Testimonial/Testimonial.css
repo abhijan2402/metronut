@@ -36,6 +36,11 @@
     border: none;
 }
 
+
+.testimonial-card {
+    width: 25%;
+}
+
 .tesimonial-img {
     width: 60%;
 }
