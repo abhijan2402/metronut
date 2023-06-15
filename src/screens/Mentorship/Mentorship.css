@@ -125,6 +125,11 @@
 #content3_details-btn:hover{
     background-color: rgba(0, 102, 255, 0.318);
 }
+#content_3-Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Fourth Section */
 #content_4{
@@ -198,4 +203,104 @@
 }
 #content6_details-btn1:hover{
     background-color: rgba(0, 102, 255, 0.318);
+}
+
+
+
+/* Media Queary */
+@media only screen and (max-width: 900px){
+    .mentorContianer {
+        padding: 0% 0% 0 0%;
+    }
+    #mentorContent_heading h1 {
+        color: rgb(70, 11, 142);
+        font-weight: 700;
+        margin: 3% 3% 0% 3%;
+    }
+}
+@media only screen and (max-width: 778px){
+    #mentorContent_heading h1 {
+        color: rgb(70, 11, 142);
+        font-weight: 700;
+        margin: 3% 3% 0% 3%;
+    }
+    .mentorContent{
+        background-color: #fff;
+        margin: 5% 5% 10% 5%;
+        width: 90%;
+        background-color: aliceblue;
+    }
+    #content3_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: 1px;
+        padding: 0 5%;
+        margin-bottom: 2%;
+    }
+    #content3_details-para {
+        margin-top: 1%;
+    }
+}
+@media only screen and (max-width: 640px){
+#first-Section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+#third-Section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+#fifth-Section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+}
+@media only screen and (max-width: 473px){
+    .tagline p {
+        font-size: 14px;
+    }
+    #content_1 {
+        width: 100%;
+        padding: 1% 6%;
+    }
+    .col-4 {
+        width: 45.333333%;
+    }
+    #content3_details-para{
+        font-size: 12px;
+        margin-top: 0%;
+    }
+    #content3_details{
+        font-size: 12px;
+    }
+    #content_6 h4 {
+        padding-top: 20px 40px;
+        font-size: 18px;
+    }
+    #content6_details-btn2 {
+        width: 8rem;
+        font-size: 12px;
+    }
+    #content6_details-btn1 {
+        width: 8rem;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 350px){
+    #mentorContent_heading h1 {
+        color: rgb(70, 11, 142);
+        font-weight: 700;
+        margin: 3% 3% 0% 3%;
+        font-size: 22px;
+    }
 }

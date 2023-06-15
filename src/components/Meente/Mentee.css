@@ -1,73 +1,118 @@
-.mentee-container {
-  padding: 1% 4%;
-  margin-top: 4%;
-}
-
 #mentee-header {
   display: flex;
-  padding: 2% 1%;
+  padding: 2% 4%;
   align-items: center;
 }
-
 #mentee-header h1 {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 4px;
-  font-size: 50px;
+  font-size: 60px;
 }
 
-.cards-wrapper {
-  width: 100%;
+#menteeCard {
   display: flex;
-  margin: 0 0.5rem;
+  flex-wrap: nowrap;
+  /* margin-inline: 22px; */
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  /* border: 2px solid red; */
+}
+#menteeCard::-webkit-scrollbar {
+  display: none;
+}
+.menteecard-carousel {
+  width: 340px;
+  margin-inline: 22px;
+  border: none;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
-.card {
-  margin: 2em;
-  width: 25%;
-  border-radius: 8px;
-}
-
-.cards-wrapper img {
+.menteecards img {
+  /* border: 3px solid #000; */
   height: 400px;
+  width: 280px;
 }
-
-#bt1 {
-  height: 60px;
-  width: 60px;
+.menteecarousel-buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  position: relative;
-  top: -316px;
-  left: -400px;
-  background-color: #fff;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.menteecarousel-buttons button {
+  font-size: 40px;
   border-radius: 50%;
-  background-image: url(../../assets/arrow-right.svg);
-  background-size: 40px;
+  width: 4rem;
+  border: none;
+  margin-left: 3rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+@media only screen and (max-width: 1025px) {
+  .menteecarousel-buttons {
+    padding: 0 5%;
+  }
+}
+@media only screen and (max-width: 918px) {
+  .menteecarousel-buttons {
+    padding: 0 0%;
+    margin-left: 0=rem;
+  }
+  #mentee-header h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .menteecarousel-buttons {
+    padding: 0 0%;
+  }
+  #mentee-header h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  .menteecarousel-buttons button {
+    font-size: 30px;
+    width: 3rem;
+  }
+  #mentee-header {
+    padding: 4% 0%;
+  }
+}
 
-#bt2 {
-  height: 60px;
-  width: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  background-image: url(../../assets/arrow-left.svg);
-  background-size: 40px;
-  position: relative;
-  top: -316px;
-  left: 655px;
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+@media only screen and (max-width: 571px) {
+  #mentee-header h1 {
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+  .menteecarousel-buttons button {
+    font-size: 30px;
+    width: 3rem;
+    margin-left: 2rem;
+  }
+  #mentee-header {
+    padding: 4% 3%;
+  }
+  #mentee-header {
+    display: flex;
+    padding: 2% 0%;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 451px) {
+  #mentee-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .menteecarousel-buttons {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menteecarousel-buttons button {
+    margin-left: 0rem;
+  }
 }

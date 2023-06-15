@@ -1,6 +1,7 @@
 import React from "react";
 import "./Enroll.css";
 import Navbar from '../../components/navbar/Navbar'
+import tick from '../../assets/tick.png';
 
 const Enroll = () => {
   function togglehide() {
@@ -26,28 +27,28 @@ const Enroll = () => {
           <div className="enroll-content">
             <div className="enroll-courses">
               <div className="courses">
-                <input type="checkbox" /> Personal IItian Mentor
+                <img src={tick} alt="" style={{height:"20px"}}/> Personal IItian Mentor
               </div>
               <div className="courses">
-                <input type="checkbox" /> Unlimited access to your mentor
+                <img src={tick} alt="" style={{height:"20px"}}/> Unlimited access to your mentor
               </div>
               <div className="courses">
-                <input type="checkbox" /> Daily task and Plan
+                <img src={tick} alt="" style={{height:"20px"}}/> Daily task and Plan
               </div>
               <div className="courses">
-                <input type="checkbox" /> live One-to-One Analysis Session
+                <img src={tick} alt="" style={{height:"20px"}}/> live One-to-One Analysis Session
               </div>
               <div className="courses">
-                <input type="checkbox" /> Study Material and Notes
+                <img src={tick} alt="" style={{height:"20px"}}/> Study Material and Notes
               </div>
               <div className="courses">
-                <input type="checkbox" /> Revision and Backlog Stategy
+                <img src={tick} alt="" style={{height:"20px"}}/> Revision and Backlog Stategy
               </div>
               <div className="courses">
-                <input type="checkbox" /> Motivation and Support
+                <img src={tick} alt="" style={{height:"20px"}}/> Motivation and Support
               </div>
               <div className="courses">
-                <input type="checkbox" /> Tips & Tricks to Achieve Top Rank
+                <img src={tick} alt="" style={{height:"20px"}}/> Tips & Tricks to Achieve Top Rank
               </div>
             </div>
             <div className="cources-prices">

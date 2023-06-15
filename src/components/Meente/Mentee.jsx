@@ -1,99 +1,57 @@
 import React from "react";
 import "./Mentee.css";
+import MenteeCard from "./MenteeCard";
 import feedback from "../../assets/feedback.png";
 
 const Mentee = () => {
+  let box = document.querySelector("#menteeCard");
+  console.log(box.scrollWidth);
+  const btnprevious = () => {
+    let width = 0;
+    width = width + 500;
+    box.scrollLeft = box.scrollLeft - width;
+    console.log(width);
+  };
+  const btnnext = () => {
+    let width = 0;
+    width = width + 500;
+    box.scrollLeft = box.scrollLeft + width;
+    console.log(width, box.scrollLeft);
+  };
+
   return (
     <>
       <div className="mentee-container">
         <div className="container-fluid">
-          <div className="row">
+          <div className="rows">
             <div className="col-12" id="mentee-header">
               <h1>Mentee Says"...</h1>
-            </div>
-
-            <div className="col-12">
-              <div
-                id="carouselExampleControls"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div className="cards-wrapper">
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div className="cards-wrapper">
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div className="cards-wrapper">
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card" style={{ width: "18rem;" }}>
-                        <img src={feedback} class="card-img-top" alt="..." />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                    id="bt2"
-                  ></span>
+              <div className="menteecarousel-buttons">
+                <button onClick={btnprevious}>
+                  <i class="bi bi-arrow-left"></i>
                 </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                    id="bt1"
-                  ></span>
+                <button onClick={btnnext}>
+                  <i class="bi bi-arrow-right"></i>
                 </button>
               </div>
             </div>
+          </div>
+          <div className="row" id="menteeCard">
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
+            <MenteeCard image={feedback} />
           </div>
         </div>
       </div>

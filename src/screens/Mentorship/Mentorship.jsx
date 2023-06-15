@@ -23,7 +23,7 @@ const Mentorship = () => {
             <div className="row" id="mentorContent_heading">
               <h1>Journey of an aspriant</h1>
             </div>
-            <div className="row justify-content-around mb-2">
+            <div className="row justify-content-around mb-2" id="first-Section">
               <div className="col-4" id="content_1">
                 <div className="tagline">
                   <p>1</p>
@@ -58,7 +58,7 @@ const Mentorship = () => {
                 </p>
               </div>
             </div>
-            <div className="row justify-content-around mb-2">
+            <div className="row justify-content-around mb-2" id="third-Section">
               <div className="col-4" id="content_1">
                 <div className="tagline">
                   <p>3</p>
@@ -93,7 +93,7 @@ const Mentorship = () => {
                 </p>
               </div>
             </div>
-            <div className="row justify-content-around mb-2">
+            <div className="row justify-content-around mb-2" id="fifth-Section">
               <div className="col-4" id="content_1">
                 <div className="tagline">
                   <p>5</p>
@@ -138,11 +138,11 @@ const Mentorship = () => {
               </div>
             </div>
 
-            <div className="row justify-content-around" id="content_3">
-              <div className="col-3">
-                <Lottie animationData={sales} style={{ width: "350px" }} />
+            <div className="row justify-content-evenly" id="content_3">
+              <div className="col-md-3" id="content_3-Image">
+                <Lottie animationData={sales} style={{ width: "400px" }} />
               </div>
-              <div className="col-7" id="content3_details">
+              <div className="col-md-7" id="content3_details">
                 <p>
                   Just like the way projectile gets firedd up to the{" "}
                   <b>maximum range at 45 degrees.</b>
