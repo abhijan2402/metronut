@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/metronut/static/css/main.73644eec.css",
-    "main.js": "/metronut/static/js/main.b4ed5dab.js",
+    "main.css": "/metronut/static/css/main.14d516ae.css",
+    "main.js": "/metronut/static/js/main.11ec59bc.js",
     "static/media/feedback.png": "/metronut/static/media/feedback.c8ed4e6c2995a0b187a0.png",
     "static/media/mentor.jpg": "/metronut/static/media/mentor.33532a60b49b3811ba59.jpg",
     "static/media/Indian_Institute_of_Technology_Bombay_Logo.svg.png": "/metronut/static/media/Indian_Institute_of_Technology_Bombay_Logo.svg.e2c5604d67511fc8c874.png",
@@ -12,25 +12,28 @@
     "static/media/logo1.png": "/metronut/static/media/logo1.7bd6fbccbaf02098e732.png",
     "static/media/logo3.png": "/metronut/static/media/logo3.875b8fb09dc5000dfd16.png",
     "static/media/logo2.png": "/metronut/static/media/logo2.aed9d288c5b2418319be.png",
+    "static/media/tick.png": "/metronut/static/media/tick.35b30664b7cb19aa1ce7.png",
     "static/media/team checklist-pana.svg": "/metronut/static/media/team checklist-pana.c75a60e10d123379cad97d8519d625c4.svg",
     "static/media/IIT-roorkee.webp": "/metronut/static/media/IIT-roorkee.347f2966eef37ab4087b.webp",
     "static/media/user-outline.png": "/metronut/static/media/user-outline.6a673ca5dd2655f6878a.png",
+    "static/media/checkin4.png": "/metronut/static/media/checkin4.edce9d243f31b484268f.png",
+    "static/media/checkin2.png": "/metronut/static/media/checkin2.7668d253cf7365313d4b.png",
+    "static/media/checkin1.png": "/metronut/static/media/checkin1.46a767283ed13be16814.png",
     "static/media/check-list1.png": "/metronut/static/media/check-list1.128574bddd812d80694b.png",
     "static/media/check-list2.png": "/metronut/static/media/check-list2.534b21eee9672758d061.png",
     "static/media/check-list4.png": "/metronut/static/media/check-list4.fb7d8db1fdbe57f3be3d.png",
+    "static/media/checkin3.png": "/metronut/static/media/checkin3.ddbce21f4d6ba7b2dbc3.png",
     "index.html": "/metronut/index.html",
     "static/media/angle-down-solid.svg": "/metronut/static/media/angle-down-solid.b0ee6c7e43846a3ee68c0a7056f5b490.svg",
     "static/media/work-background2.svg": "/metronut/static/media/work-background2.316beb3cfe20c13c54dedc4aa67a8bab.svg",
     "static/media/work-background.svg": "/metronut/static/media/work-background.a642754702c21b16701a2365cdb49738.svg",
-    "static/media/arrow-right.svg": "/metronut/static/media/arrow-right.2bd4657691a348b7d168.svg",
-    "static/media/arrow-left.svg": "/metronut/static/media/arrow-left.ef02da4279102360fbcd.svg",
     "static/media/plus.svg": "/metronut/static/media/plus.e4d7be0f630c6dbc8d41.svg",
     "static/media/dash.svg": "/metronut/static/media/dash.d4499b1e324d682106b3.svg",
-    "main.73644eec.css.map": "/metronut/static/css/main.73644eec.css.map",
-    "main.b4ed5dab.js.map": "/metronut/static/js/main.b4ed5dab.js.map"
+    "main.14d516ae.css.map": "/metronut/static/css/main.14d516ae.css.map",
+    "main.11ec59bc.js.map": "/metronut/static/js/main.11ec59bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.73644eec.css",
-    "static/js/main.b4ed5dab.js"
+    "static/css/main.14d516ae.css",
+    "static/js/main.11ec59bc.js"
   ]
 }
