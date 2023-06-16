@@ -19,12 +19,14 @@ function Form({ state }) {
                 throw alert("Please Enter Class")
             else {
                 const date = new Date();
+                const CHeckD = date.toDateString();
+                console.log(CHeckD, "jj");
                 const docRef = await addDoc(collection(db, "FormData"), {
                     Name: name,
                     Class: classVal,
                     Mobile: phoneNumber,
                     Problem: problem,
-                    Date: date,
+                    Date: CHeckD,
                     Note: ""
                 }).then((res) => {
                     console.log("Document written with ID: ", res.id);
