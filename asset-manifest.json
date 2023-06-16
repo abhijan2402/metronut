@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/metronut/static/css/main.14d516ae.css",
-    "main.js": "/metronut/static/js/main.4fa0c0e0.js",
+    "main.css": "/metronut/static/css/main.3137e80a.css",
+    "main.js": "/metronut/static/js/main.5b2fffbd.js",
     "static/media/feedback.png": "/metronut/static/media/feedback.c8ed4e6c2995a0b187a0.png",
     "static/media/mentor.jpg": "/metronut/static/media/mentor.33532a60b49b3811ba59.jpg",
     "static/media/Indian_Institute_of_Technology_Bombay_Logo.svg.png": "/metronut/static/media/Indian_Institute_of_Technology_Bombay_Logo.svg.e2c5604d67511fc8c874.png",
@@ -12,7 +12,6 @@
     "static/media/logo1.png": "/metronut/static/media/logo1.7bd6fbccbaf02098e732.png",
     "static/media/logo3.png": "/metronut/static/media/logo3.875b8fb09dc5000dfd16.png",
     "static/media/logo2.png": "/metronut/static/media/logo2.aed9d288c5b2418319be.png",
-    "static/media/tick.png": "/metronut/static/media/tick.35b30664b7cb19aa1ce7.png",
     "static/media/team checklist-pana.svg": "/metronut/static/media/team checklist-pana.c75a60e10d123379cad97d8519d625c4.svg",
     "static/media/IIT-roorkee.webp": "/metronut/static/media/IIT-roorkee.347f2966eef37ab4087b.webp",
     "static/media/user-outline.png": "/metronut/static/media/user-outline.6a673ca5dd2655f6878a.png",
@@ -29,11 +28,11 @@
     "static/media/work-background.svg": "/metronut/static/media/work-background.a642754702c21b16701a2365cdb49738.svg",
     "static/media/plus.svg": "/metronut/static/media/plus.e4d7be0f630c6dbc8d41.svg",
     "static/media/dash.svg": "/metronut/static/media/dash.d4499b1e324d682106b3.svg",
-    "main.14d516ae.css.map": "/metronut/static/css/main.14d516ae.css.map",
-    "main.4fa0c0e0.js.map": "/metronut/static/js/main.4fa0c0e0.js.map"
+    "main.3137e80a.css.map": "/metronut/static/css/main.3137e80a.css.map",
+    "main.5b2fffbd.js.map": "/metronut/static/js/main.5b2fffbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.14d516ae.css",
-    "static/js/main.4fa0c0e0.js"
+    "static/css/main.3137e80a.css",
+    "static/js/main.5b2fffbd.js"
   ]
 }
