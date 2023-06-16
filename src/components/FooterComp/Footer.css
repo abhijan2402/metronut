@@ -157,25 +157,63 @@
     margin-right: 2%; */
 }
 
+.FooterBottom {
+    display: none;
+}
 
 @media screen and (min-width: 300px) and (max-width:800px) {
-    .FooterHeader p {
-        width: 90%;
-        font-size: 18px;
+    .FooterBottom {
+        display: block;
+        color: white;
+        text-align: center;
+        margin-top: 5%;
     }
 
-    .FooterBtnDiv {
-        width: 90%;
-        margin-top: 5%;
+    .GoogleImgDiv {
+        width: 100%;
+        text-align: center;
+    }
+
+    .GooglePLayImage {
+        width: 40%;
+        height: 100%;
         margin-bottom: 5%;
     }
 
+    .FooterHeader h2 {
+        font-size: 24px;
+    }
+
+    .FooterHeader p {
+        width: 90%;
+        font-size: 13px;
+        color: white;
+    }
+
+    .FooterBtnDiv {
+        margin: auto;
+        width: auto;
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        text-align: center;
+        align-items: center;
+
+
+    }
+
     .FooterBtn1 {
-        font-size: 12px;
+        font-size: 15px;
+        text-align: center;
+        margin: 2% 0%;
+        width: 50%;
     }
 
     .FooterBtn2 {
-        font-size: 12px;
+        font-size: 15px;
+        width: 50%;
     }
 
     .FooterContentDiv {
@@ -185,7 +223,12 @@
     .FooterContentDiv1 {
         margin: auto;
         width: auto;
-        width: 70%;
+        width: 80%;
+    }
+
+    .FooterContentDiv1 p {
+        font-size: 13px;
+        width: 100%;
     }
 
     .FooterContentDiv2 {
@@ -206,16 +249,17 @@
     .UlFooter li {
         list-style: none;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
 
     }
 
 
     .InnerFooterList2 ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        padding: 0;
+        text-align: center;
         font-size: 13px;
         /* border: 1px solid red; */
     }
@@ -234,7 +278,7 @@
     }
 
     .FooterContentDiv3 ul li {
-        width: 15%;
+        width: 100%;
     }
 
     .FooterContentDiv3 h3 {
@@ -246,17 +290,14 @@
         margin: auto;
         width: auto;
         width: 100%;
+        margin-bottom: 2%;
     }
 
     .FooterSocialMedia {
         display: flex;
     }
 
-    .FooterDivContact {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    .FooterDivContact {}
 
     .OuterDivImageLogos {
         margin: auto;

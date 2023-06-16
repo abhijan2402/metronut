@@ -87,6 +87,14 @@ function Footer() {
                         </div>
                     </div>
                 </div>
+                <div className='FooterBottom'>
+                    <div>
+                        <p>@2023 <span style={{ color: "orange", fontWeight: "600" }}>mentornut</span> All Rights Reserved.</p>
+                    </div>
+                    <div className='GoogleImgDiv'>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" className='GooglePLayImage' />
+                    </div>
+                </div>
             </div>
         </>
     )
