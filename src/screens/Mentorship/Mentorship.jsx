@@ -10,8 +10,8 @@ import work from "../../assets/work.json";
 import sales from "../../assets/sales.json";
 import team from "../../assets/team.json";
 import thinking from "../../assets/thinking.json";
-import Courses from "../../components/Courses/Courses"
-import Navbar from '../../components/navbar/Navbar'
+import Courses from "../../components/Courses/Courses";
+import Navbar from "../../components/navbar/Navbar";
 
 const Mentorship = () => {
   return (
@@ -23,6 +23,8 @@ const Mentorship = () => {
             <div className="row" id="mentorContent_heading">
               <h1>Journey of an aspriant</h1>
             </div>
+
+            {/* First Section */}
             <div className="row justify-content-around mb-2" id="first-Section">
               <div className="col-4" id="content_1">
                 <div className="tagline">
@@ -36,12 +38,21 @@ const Mentorship = () => {
                   <b>lorem ipsum derum so.</b>
                 </p>
               </div>
-              <div className="col-4">
+              <div className="col-4" id="first-SectionImage">
+                <div className="first-SectionImage-tagline">
+                  <p>1</p>
+                  <h5>Meet Harshul</h5>
+                </div>
                 <Lottie animationData={boy1} />
               </div>
             </div>
+            {/* Section Second */}
             <div className="row justify-content-around mb-2">
-              <div className="col-4">
+              <div className="col-4" id="content_1Image">
+                <div className="content_1Imagetagline">
+                  <p>2</p>
+                  <h5>Loop of schools and coachings</h5>
+                </div>
                 <Lottie animationData={loop} />
               </div>
               <div className="col-4" id="content_1">
@@ -58,6 +69,7 @@ const Mentorship = () => {
                 </p>
               </div>
             </div>
+            {/* Section Third */}
             <div className="row justify-content-around mb-2" id="third-Section">
               <div className="col-4" id="content_1">
                 <div className="tagline">
@@ -71,12 +83,22 @@ const Mentorship = () => {
                   <b>lorem ipsum derum so.</b>
                 </p>
               </div>
-              <div className="col-4">
+              <div className="col-4" id="content_1Image">
+                <div className="content_1tagline">
+                  <p>3</p>
+                  <h5>Doubts and uncertainty</h5>
+                </div>
                 <Lottie animationData={tired} />
               </div>
             </div>
+
+            {/* Section Fourth */}
             <div className="row justify-content-around mb-2">
-              <div className="col-4">
+              <div className="col-4" id="content_1Image">
+                <div className="content_1tagline">
+                  <p>4</p>
+                  <h5>No Direction</h5>
+                </div>
                 <Lottie animationData={dout} />
               </div>
               <div className="col-4" id="content_1">
@@ -93,6 +115,8 @@ const Mentorship = () => {
                 </p>
               </div>
             </div>
+
+            {/* Section 5 */}
             <div className="row justify-content-around mb-2" id="fifth-Section">
               <div className="col-4" id="content_1">
                 <div className="tagline">
@@ -106,7 +130,11 @@ const Mentorship = () => {
                   <b>lorem ipsum derum so.</b>
                 </p>
               </div>
-              <div className="col-4">
+              <div className="col-4" id="content_1Image">
+                <div className="content_1tagline">
+                  <p>5</p>
+                  <h5>Self Doubts & Stressed Out</h5>
+                </div>
                 <Lottie animationData={sad} />
               </div>
             </div>

@@ -5,7 +5,6 @@ import feedback from "../../assets/feedback.png";
 
 const Mentee = () => {
   let box = document.querySelector("#menteeCard");
-  console.log(box.scrollWidth);
   const btnprevious = () => {
     let width = 0;
     width = width + 500;

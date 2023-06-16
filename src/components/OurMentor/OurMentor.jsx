@@ -10,12 +10,14 @@ const OurMentor = () => {
   console.log(box);
   const btnprevious = () => {
     let width = 0;
+    box.scrollLeft = 0;
     width = width + 500;
     box.scrollLeft = box.scrollLeft - width;
     console.log(width);
   };
   const btnnext = () => {
     let width = 0;
+    box.scrollLeft = 0;
     width = width + 500;
     box.scrollLeft = box.scrollLeft + width;
     console.log(width);

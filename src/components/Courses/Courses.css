@@ -1,47 +1,62 @@
-.container5{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 2% 0;
-
+.container5 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2% 0;
 }
 .container5 h3 {
-    font-weight: 700;
-    color: rgba(66, 33, 199, 0.877);
+  font-weight: 700;
+  color: rgba(66, 33, 199, 0.877);
 }
 .container5 h3 b {
-    background-color: rgb(240, 184, 45);
-    color: #000;
+  background-color: rgb(240, 184, 45);
+  color: #000;
 }
-.courses-facuilty{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    /* border: 2px solid red; */
-    margin-top: 20px;
-    padding: 3%;
+.courses-facuilty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  padding: 3%;
 }
-.course-card{
-    display: flex;
-    align-items: center;
-    /* border: 2px solid green; */
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    justify-content: center;
-    flex-direction: column;
-    padding: 8px 7px;
-    width: 24%;
-    margin-bottom: 2%;
-    border-radius: 15px;
+.course-card {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid green; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px 7px;
+  width: 24%;
+  margin-bottom: 2%;
+  border-radius: 15px;
 }
-.course-card h2{
-    font-size: 10px;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 10px;
+.course-card h2 {
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 10px;
 }
 .course-card p {
-    font-size: 8px;
-    text-align: center;
-    color: gray;
+  font-size: 8px;
+  text-align: center;
+  color: gray;
+}
+
+@media only screen and (max-width: 473px) {
+  .courses-facuilty {
+    flex-direction: column;
+  }
+  .course-card {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .course-card h2 {
+    font-size: 14px;
+  }
+  .course-card p {
+    font-size: 12px;
+  }
 }
