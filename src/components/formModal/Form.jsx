@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { doc, setDoc } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore";
+import { query, where, getDocs } from "firebase/firestore";
 import { db } from '../../firebase'
 import './Form.css'
 function Form({ state }) {
@@ -19,15 +20,27 @@ function Form({ state }) {
                 throw alert("Please Enter Class")
             else {
                 const date = new Date();
-                const CHeckD = date.toDateString();
+                const CHeckD = date.toISOString();
                 console.log(CHeckD, "jj");
+                let resultArray = [];
+                var len = 0
+                const baseQuery = query(collection(db, "FormData"));
+                await getDocs(baseQuery).then((res) => {
+                    res.forEach((item) => {
+                        resultArray.push({ id: item.id, ...item.data() });
+                    })
+                    len = resultArray.length;
+                    console.log(len, "hjj");
+                })
+                console.log(len, "i m len");
                 const docRef = await addDoc(collection(db, "FormData"), {
                     Name: name,
                     Class: classVal,
                     Mobile: phoneNumber,
                     Problem: problem,
                     Date: CHeckD,
-                    Note: ""
+                    Note: "",
+                    Num: len
                 }).then((res) => {
                     console.log("Document written with ID: ", res.id);
                     alert("Your Form submitted,We'll update shortly")
@@ -39,6 +52,23 @@ function Form({ state }) {
             console.log(error);
         }
     }
+    const getData = async () => {
+        console.log("kkk");
+        let resultArray = [];
+        const baseQuery = query(collection(db, "FormData"));
+        getDocs(baseQuery).then((res) => {
+            res.forEach((item) => {
+                resultArray.push({ id: item.id, ...item.data() });
+            })
+            let len = resultArray.length;
+            console.log(len, "I am len");
+            return len;
+        })
+    }
+    useEffect(() => {
+        getData()
+    }, [])
+
     return (
         <div className='FormMainOuterDiv'>
             <div className='FormMainDiv'>
