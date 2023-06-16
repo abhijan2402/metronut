@@ -82,6 +82,14 @@
   #mentee-header {
     padding: 4% 0%;
   }
+
+  .menteecard-carousel img {
+    border: 4px solid black;
+    margin-top: 2rem;
+    border-radius: 1rem;
+  }
+
+  
 }
 
 @media only screen and (max-width: 571px) {

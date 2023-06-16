@@ -11,11 +11,11 @@ function Form({ state }) {
     const SubmitForm = async () => {
         console.log(name, phoneNumber, classVal, problem)
         try {
-            if (name == "")
+            if (name === "")
                 throw alert("Please Enter Name")
-            if (phoneNumber == "")
+            if (phoneNumber === "")
                 throw alert("Please Enter Phone Number")
-            if (classVal == "")
+            if (classVal === "")
                 throw alert("Please Enter Class")
             else {
                 const date = new Date();

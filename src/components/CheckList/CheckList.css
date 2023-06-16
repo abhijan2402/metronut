@@ -1,115 +1,195 @@
 .checkin-container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .dot {
-    width: 2px;
-    border-left: 5px dotted #f60;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-
+  width: 2px;
+  border-left: 5px dotted #f60;
+  height: 100%;
+  position: absolute;
+  top: 50%;
 }
 
 .check-list-para {
-    background: linear-gradient(90deg, #eac7cc, #f2dbcb);
-    margin-bottom: 3rem;
-    padding: 1.5rem;
+  background: linear-gradient(90deg, #eac7cc, #f2dbcb);
+  margin-bottom: 3rem;
+  padding: 1.5rem;
 }
 
 .check-list-para h3 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .check-list-para p {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    color: rgb(50, 49, 49);
-    font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: rgb(50, 49, 49);
+  font-weight: 500;
 }
 
 .check-list-header {
-    align-items: center;
-    display: flex;
-    margin-bottom: 3rem;
+  align-items: center;
+  display: flex;
+  margin-bottom: 3rem;
 }
 .check-list-header h2 {
-    background-color: #f60;
-    border: 2px solid lightgray;
-    padding: 0.5rem 2rem;
-    border-radius: 8px;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #ffffff;
+  background-color: #f60;
+  border: 2px solid lightgray;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #ffffff;
 }
 
 .check-list-icon-box {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
 
 .check-list-icon-box img {
-    width: 150px;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 2.5rem;
+  width: 150px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2.5rem;
 }
 
-@media screen and (max-width: 1000px) {
-    .checkin-container {
-        width: 100%;
-    }
+.checkin-mobile {
+  display: none !important;
+}
 
-    .check-list-icon-box img {
-        width: 120px;
-    }
-    
+
+.icon1 img {
+    width: 155px;
+  }
+
+  .icon2 img {
+    width: 130px;
+  }
+
+  .icon3 img {
+    width: 135px;
+  }
+
+  .icon4 img {
+    width: 120px;
+  }
+
+
+@media screen and (max-width: 1000px) {
+  .checkin-container {
+    width: 100%;
+  }
+  .icon1 img {
+    width: 140px;
+  }
+
+  .icon2 img {
+    width: 115px;
+  }
+
+  .icon3 img {
+    width: 125px;
+  }
+
+  .icon4 img {
+    width: 110px;
+  }
 }
 
 @media screen and (max-width: 783px) {
-    .check-list-para {
-        padding: 0.8rem;
-    }
+  .checkin-desktop {
+    display: none !important;
+  }
 
-    .check-list-icon {
-        width: 50px;
-        height: 50px;
-    }
+  .checkin-mobile {
+    display: grid !important;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+  }
 
-    .check-list-para h3 {
-        font-size: 1.1rem;
-        letter-spacing: 1px;
-        margin-bottom: 1rem;
-        font-weight: 700;
-    }
+  .check-list-para {
+    padding: 0.8rem;
+    background-color: linear-gradient(90deg, #efcad7, #f6dccd);
+  }
 
-    .check-list-para p {
-        font-size: 0.95rem;
-        line-height: 1.5rem;
-        color: rgb(50, 49, 49);
-        font-weight: 500;
-    }
+  .check-list-icon {
+    width: 50px;
+    height: 50px;
+  }
 
-    .check-list-header h2 {
-        padding: 0.5rem 1rem;
-        font-size: 1.3rem;
-    }
+  .check-list-para h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
 
-    .check-list-icon-box img {
-        width: 105px;
-    }
+  .check-list-para p {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    color: rgb(50, 49, 49);
+    font-weight: 500;
+  }
+
+  .check-list-header h2 {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+  }
+
+  .icon1 img {
+    width: 140px;
+  }
+
+  .icon2 img {
+    width: 110px;
+  }
+
+  .icon3 img {
+    width: 120px;
+  }
+
+  .icon4 img {
+    width: 100px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
-    .check-list-para {
+
+    .checkin-mobile {
+        display: grid !important;
+        grid-template-columns: 20% 70%;
+        grid-gap: 10px;
+      }
+
+
+      .icon1 img {
+        width: 125px;
+      }
+      
+
+      .icon3 img {
+        width: 110px;
+      }
+
+      .icon4 img {
+        width: 92px;
+      }
+
+      .check-list-icon-box:last-child img {
+        width: 100px;
+        background-color: red;
+      }
+    
+  /* .check-list-para {
         padding: 0.8rem;
     }
 
@@ -139,5 +219,5 @@
 
     .check-list-icon-box img {
         width: 65px;
-    }
+    } */
 }

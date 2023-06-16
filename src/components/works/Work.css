@@ -102,6 +102,10 @@
     box-shadow: rgba(5, 122, 255, 1) -5px 5px, rgba(5, 122, 255, 1) -10px 10px, rgba(5, 122, 255, 1) -15px 15px, rgba(5, 122, 255, 1) -20px 20px;
  }
 
+ .works-mobile-view {
+    display: none !important;
+ }
+
  @media screen and (max-width: 1400px) {
     .work-card-box {
         padding: 1rem 2rem;
@@ -141,38 +145,27 @@
  }
 
  @media screen and (max-width: 778px) {
-    .work-card-group {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .work-card {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
+    
     .work-card-box {
-        flex-basis: 50%;
-        height: 170px;
-        box-shadow: rgba(5, 122, 255, 1) 5px 5px, rgba(5, 122, 255, 1) 10px 10px, rgba(5, 122, 255, 1) 15px 15px;
+        box-shadow: rgba(5, 122, 255, 1) -5px 5px, rgba(5, 122, 255, 1) -10px 10px, rgba(5, 122, 255, 1) -15px 15px;
+        margin-bottom: 3rem;
      }
 
      .work-card-img {   
-      flex-basis: 50%;  
-    }
-    
-    .work-card-reverse {
-        flex-direction: column;
-        gap: 2rem;
-        position: static;
-        margin-top: 35%;
+      width: 50%;
+      margin: auto; 
+      margin-bottom: 1rem;
+      margin-top: 1rem;
     }
 
-    .work-card-reverse .work-card-box {
-        flex-basis: 50%;
-        height: 170px;
-        padding: 1rem 2rem;
-        box-shadow: rgba(5, 122, 255, 1) -5px 5px, rgba(5, 122, 255, 1) -10px 10px, rgba(5, 122, 255, 1) -15px 15px;
+
+     .works-desktop-view {
+        display: none !important;
+    }
+
+    .works-mobile-view {
+        display: flex !important;
+        flex-direction: column;
      }
  }
 
@@ -197,29 +190,9 @@
         line-height: 1rem;
     }
 
-    .work-card-group {
-        gap: 1rems;
-    }
-    
-
     .work-card-box {
-        height: 130px;
-        border-radius: 1.5rem;
-        box-shadow: rgba(5, 122, 255, 1) 5px 5px, rgba(5, 122, 255, 1) 10px 10px;
-     }
-
-    .work-card-reverse {
-        flex-direction: column;
-        position: static;
-        margin-top: 35%;
-        margin-bottom: 35%;
-        height: 130px;
-    }
-
-    .work-card-reverse .work-card-box {
-        height: 100%;
-        padding: 1rem;
         box-shadow: rgba(5, 122, 255, 1) -5px 5px, rgba(5, 122, 255, 1) -10px 10px;
+        margin-bottom: 2.5rem;
      }
 
      .work-card-group {

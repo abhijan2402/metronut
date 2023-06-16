@@ -44,7 +44,7 @@ const Landing = () => {
       </div>
 
 
-      <div className="container px-4 py-3 d-flex gap-3 align-items-center landing-white-bar" style={{ backgroundColor: '#fff', marginTop: '1rem', borderRadius: '1.2rem' }}>
+      <div className="container px-4 py-3 d-flex gap-3 align-items-center landing-white-bar landing-box-desktop" style={{ backgroundColor: '#fff', marginTop: '1rem', borderRadius: '1.2rem' }}>
         <div className='d-flex align-items-center justify-content-between landing-numbers'>
           <div className='d-flex align-items-center gap-3'>
             <img src={userFill} alt="" />
@@ -74,6 +74,20 @@ const Landing = () => {
           <img width={50} height={50} src={roorkee} alt="" />
           <img width={50} height={50} src={kharappur} alt="" />
           <img width={50} height={50} src={delhi} alt="" />
+        </div> 
+      </div>
+
+      <div className="container align-items-center landing-box-mobile" >
+
+          <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <span className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <span style={{color: '#000'}}>like</span></span> </h3>
+
+        <div className='d-flex px-4 py-3  gap-2 gap-md-5 collges' >
+          <img src={bombay} alt="" />
+          <img src={madras} alt="" />
+          <img src={kanpur} alt="" />
+          <img src={roorkee} alt="" />
+          <img src={kharappur} alt="" />
+          <img src={delhi} alt="" />
         </div> 
       </div>
     </div>
