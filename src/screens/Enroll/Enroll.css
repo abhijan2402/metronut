@@ -16,13 +16,30 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+#enroll-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#enroll-btns button{
+    padding: 2px 25px;
+    border: 2px solid rgba(0, 89, 255, 0.373) ;
+    outline: none;
+    background-color: transparent;
+    color: rgba(0, 89, 255, 0.903);
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+#enroll-btns button:hover{
+    background-color: rgba(0, 89, 255, 0.09) ;
+}
 
 .enroll-maincontainer h1 {
     padding-bottom: 1%;
     text-align: center;
 }
 
-.enroll-maincontainer p {
+.enroll-maincontainer .enroll-maincontainer-p {
     letter-spacing: 2px;
     padding-bottom: 1%;
     text-align: center;
@@ -35,24 +52,41 @@
 
     padding: 1% 0% 1% 2%;
 }
-
+hr{
+    color:rgb(0, 0, 255) ;
+    width: 150px;
+    border: 1.5px solid;
+}
 .enroll-courses {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: fit-content;
     width: 400px;
+    padding: 1% 1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.courses {
+/* .courses {
     padding: 16px 30px;
+} */
+.enroll_note{
+    background-color: rgba(0, 170, 255, 0.218);
+    padding: 20px 20px;
 }
-
-.courses:nth-child(even) {
-    background-color: rgb(234, 235, 236);
+.enroll-courses-note h4{
+    color: rgb(53, 53, 249);
+    padding: 1% 1%;
+    font-weight: bold;
 }
-
-.courses img {
-    margin-right: 8px;
-    font-size: 20px;
+.enroll-courses-note p{
+    font-size: 10px;
+    padding: 1% 1%;
+}
+.enroll-courses-suggestion{
+    display: flex;
+    margin-top: 2%;
+}
+.enroll-courses-suggestion h3 {
+    font-weight: bold;
 }
 
 
@@ -127,6 +161,7 @@
     color: gray;
     font-size: 12px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .questions-content {

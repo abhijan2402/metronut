@@ -9,11 +9,13 @@ const OurMentor = () => {
   let box = document.querySelector(".cardCarousel");
   const btnprevious = () => {
     let width = 0;
+    box.scrollLeft = 0;
     width = width + 500;
     box.scrollLeft = box.scrollLeft - width;
   };
   const btnnext = () => {
     let width = 0;
+    box.scrollLeft = 0;
     width = width + 500;
     box.scrollLeft = box.scrollLeft + width;
   };
