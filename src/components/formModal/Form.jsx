@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { doc, setDoc } from 'firebase/firestore';
 import { collection, addDoc } from 'firebase/firestore';
 import { query, where, getDocs } from 'firebase/firestore';
+import Lottie from "lottie-react";
 import { db } from '../../firebase';
+import thankYou from '../../assets/thankYou.json'
 import './Form.css';
 function Form({ state }) {
   const [name, setname] = useState('');
   const [phoneNumber, setphoneNumber] = useState('');
   const [classVal, setclassVal] = useState('');
   const [problem, setProblem] = useState('');
+  const [AniActive, setAniActive] = useState(false)
   const SubmitForm = async () => {
     console.log(name, phoneNumber, classVal, problem);
     try {
@@ -41,7 +44,10 @@ function Form({ state }) {
         })
           .then((res) => {
             console.log('Document written with ID: ', res.id);
-            alert("Your Form submitted,We'll update shortly");
+            setAniActive(true);
+            setTimeout(() => {
+              setAniActive(false)
+            }, 6000);
           })
           .catch((e) => {
             throw 'Please try again,Some error occured !!';
@@ -78,105 +84,113 @@ function Form({ state }) {
             className="FormImage"
           />
         </div>
+        {
+          AniActive ? <div>
+            <h4 style={{ textAlign: "center", margin: "2% 5%" }}> We will connect with you shortly!!!</h4>
+            <Lottie animationData={thankYou} style={{ width: "100%", height: "100%" }} />
+          </div> :
+            <>
+              <div className="FormHeadingDiv">
+                <h2 className="FormHeading">
+                  Fill out the Form To Get Free Demo by IITian
+                </h2>
+                {/* </div> */}
+              </div>
+              <div className="OuterFormDiv">
+                <div className="InputMainDiv">
+                  <label className="FormLabel">Name *</label>
+                  <input
+                    className="FormInput"
+                    type="text"
+                    onChange={(e) => {
+                      setname(e.target.value);
+                    }}
+                  />
+                </div>
+                <div className="InputMainDiv">
+                  <label className="FormLabel">Mobile *</label>
+                  <input
+                    className="FormInput"
+                    type="text"
+                    onChange={(e) => {
+                      setphoneNumber(e.target.value);
+                    }}
+                  />
+                </div>
+                <div className="InputMainDiv">
+                  <label className="FormLabel">Class *</label>
+                  <div className="InputradioDiv">
+                    <div className="InputInnerDivR">
+                      <input
+                        type="radio"
+                        id="11th"
+                        name="11th"
+                        value="11th"
+                        onClick={(e) => {
+                          setclassVal(e.target.value);
+                        }}
+                      />
+                      <label htmlFor="vehicle1">11th</label>
+                    </div>
+                    <div className="InputInnerDivR">
+                      <input
+                        type="radio"
+                        id="11th"
+                        name="11th"
+                        value="12th"
+                        onClick={(e) => {
+                          setclassVal(e.target.value);
+                        }}
+                      />
+                      <label htmlFor="vehicle1">12th</label>
+                    </div>
+                    <div className="InputInnerDivR">
+                      <input
+                        type="radio"
+                        id="11th"
+                        name="11th"
+                        value="Dropper"
+                        onClick={(e) => {
+                          setclassVal(e.target.value);
+                        }}
+                      />
+                      <label htmlFor="vehicle1">Dropper</label>
+                    </div>
+                    <div className="InputInnerDivR">
+                      <input
+                        type="radio"
+                        id="11th"
+                        name="11th"
+                        value="Below11th"
+                        onClick={(e) => {
+                          setclassVal(e.target.value);
+                        }}
+                      />
+                      <label htmlFor="vehicle1"> Below 11th</label>
+                    </div>
+                  </div>
+                </div>
+                <div className="InputMainDiv">
+                  <label className="FormLabel">Problem (Optional)</label>
+                  <textarea
+                    placeholder="Kindly share your problem in brief"
+                    className="FormInput"
+                    type="text"
+                    rows="5"
+                    onChange={(e) => {
+                      setProblem(e.target.value);
+                    }}
+                  />
+                </div>
+                <div className="ButtonFormDiv">
+                  <button className="FormBtn" onClick={SubmitForm}>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </>
+        }
         {/* <div> */}
-        <div className="FormHeadingDiv">
-          <h2 className="FormHeading">
-            Fill out the Form To Get Free Demo by IITian
-          </h2>
-          {/* </div> */}
-        </div>
-        <div className="OuterFormDiv">
-          <div className="InputMainDiv">
-            <label className="FormLabel">Name *</label>
-            <input
-              className="FormInput"
-              type="text"
-              onChange={(e) => {
-                setname(e.target.value);
-              }}
-            />
-          </div>
-          <div className="InputMainDiv">
-            <label className="FormLabel">Mobile *</label>
-            <input
-              className="FormInput"
-              type="text"
-              onChange={(e) => {
-                setphoneNumber(e.target.value);
-              }}
-            />
-          </div>
-          <div className="InputMainDiv">
-            <label className="FormLabel">Class *</label>
-            <div className="InputradioDiv">
-              <div className="InputInnerDivR">
-                <input
-                  type="radio"
-                  id="11th"
-                  name="11th"
-                  value="11th"
-                  onClick={(e) => {
-                    setclassVal(e.target.value);
-                  }}
-                />
-                <label htmlFor="vehicle1">11th</label>
-              </div>
-              <div className="InputInnerDivR">
-                <input
-                  type="radio"
-                  id="11th"
-                  name="11th"
-                  value="12th"
-                  onClick={(e) => {
-                    setclassVal(e.target.value);
-                  }}
-                />
-                <label htmlFor="vehicle1">12th</label>
-              </div>
-              <div className="InputInnerDivR">
-                <input
-                  type="radio"
-                  id="11th"
-                  name="11th"
-                  value="Dropper"
-                  onClick={(e) => {
-                    setclassVal(e.target.value);
-                  }}
-                />
-                <label htmlFor="vehicle1">Dropper</label>
-              </div>
-              <div className="InputInnerDivR">
-                <input
-                  type="radio"
-                  id="11th"
-                  name="11th"
-                  value="Below11th"
-                  onClick={(e) => {
-                    setclassVal(e.target.value);
-                  }}
-                />
-                <label htmlFor="vehicle1"> Below 11th</label>
-              </div>
-            </div>
-          </div>
-          <div className="InputMainDiv">
-            <label className="FormLabel">Problem (Optional)</label>
-            <textarea
-              placeholder="Kindly share your problem in brief"
-              className="FormInput"
-              type="text"
-              rows="5"
-              onChange={(e) => {
-                setProblem(e.target.value);
-              }}
-            />
-          </div>
-          <div className="ButtonFormDiv">
-            <button className="FormBtn" onClick={SubmitForm}>
-              Submit
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
