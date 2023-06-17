@@ -1,0 +1,202 @@
+.enrollPlan-maincontainer {
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.enrollPlan-conatiner {
+  /* border: 2px solid green; */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+#enrollPlan-conatiner-sections {
+  /* pt-4 px-5 pb-4 */
+  padding: 2% 4% 2% 4%;
+}
+#enrollPlan-clo2 {
+  /* border: 2px solid red; */
+  width: 70%;
+  padding: 2% 3%;
+  margin-left: 1%;
+}
+.enrollPlan-clo2-heading h1 {
+  font-weight: 700;
+}
+.enrollPlan-clo2-heading p {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.562);
+}
+.enrollPlan-clo2-section {
+  display: flex;
+  justify-content: space-between;
+}
+.enrollPlan-clo2-section1 {
+  background-color: rgba(8, 76, 249, 0.685);
+  padding: 4% 4%;
+  border-radius: 15px;
+  color: #fff;
+  width: 45%;
+}
+.enrollPlan-clo2-section1 p {
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.enrollPlan-clo2-section1 h5 {
+  font-size: 22px;
+  margin-bottom: 10%;
+}
+.enrollPlan-clo2-section1 i {
+  font-size: 22px;
+  margin-right: 10px;
+}
+.enrollPlan-clo2-section1-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.enrollPlan-clo2-section1 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  background-color: #fff;
+  color: blue;
+  padding: 10px 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.enrollPlan-clo2-section1 button:hover {
+  color: rgba(0, 0, 255, 0.601);
+}
+.enrollPlan-clo2-section1-btn i {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+/* --------------- */
+#enrollPlan-clo1 {
+  /* border: 2px solid; */
+  background-color: rgba(109, 212, 253, 0.284);
+  border-radius: 8px;
+}
+#enrollPlan-clo1 h1 {
+  margin-top: 25px;
+  padding: 3% 8%;
+  font-weight: 700;
+}
+#enrollPlan-clo1 h1 span {
+  color: rgba(8, 76, 249, 0.685);
+  margin-left: 3px;
+}
+.enrollPlan-image {
+  /* border: 2px solid red; */
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: fill;
+}
+
+
+.social-section{
+display: flex;
+justify-content: space-evenly;
+background-color: #fff;
+padding: 3% 1%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 10px;
+margin-top: 80px;
+}
+.social-section i{
+color: green;
+font-size: 35px;
+}
+.social-section h5{
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom:0 ;
+}
+.social-section p{
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-section p:hover{
+  color: rgba(0, 0, 255, 0.858);
+}
+
+
+@media only screen and (max-width: 1416px) {
+  .enrollPlan-conatiner {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .enrollPlan-conatiner {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #enrollPlan-clo1 h1 {
+    text-align: center;
+  }
+  #enrollPlan-clo2 {
+    width: 100%;
+  }
+  .social-section{
+    padding: 2% 1%;
+    margin-top: 20px;
+    margin-bottom:20px ;
+    width: 40%;
+    }
+}
+@media only screen and (max-width: 715px) {
+  .enrollPlan-clo2-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .enrollPlan-clo2-section1 {
+    margin-bottom: 2%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #enrollPlan-clo2 {
+    padding: 2% 2%;
+  }
+  .enrollPlan-clo2-section1 {
+    margin-bottom: 2%;
+    width: 100%;
+  }
+  #enrollPlan-conatiner-sections {
+    padding: none;
+  }
+  .social-section{
+    padding: 1% 0%;
+    margin-top: 20px;
+    margin-bottom:20px ;
+    width: 60%;
+    }
+}
