@@ -119,7 +119,7 @@ function Form({ state }) {
                     setclassVal(e.target.value);
                   }}
                 />
-                <label for="vehicle1">11th</label>
+                <label htmlFor="vehicle1">11th</label>
               </div>
               <div className="InputInnerDivR">
                 <input
@@ -131,7 +131,7 @@ function Form({ state }) {
                     setclassVal(e.target.value);
                   }}
                 />
-                <label for="vehicle1">12th</label>
+                <label htmlFor="vehicle1">12th</label>
               </div>
               <div className="InputInnerDivR">
                 <input
@@ -143,7 +143,7 @@ function Form({ state }) {
                     setclassVal(e.target.value);
                   }}
                 />
-                <label for="vehicle1">Dropper</label>
+                <label htmlFor="vehicle1">Dropper</label>
               </div>
               <div className="InputInnerDivR">
                 <input
@@ -155,7 +155,7 @@ function Form({ state }) {
                     setclassVal(e.target.value);
                   }}
                 />
-                <label for="vehicle1"> Below 11th</label>
+                <label htmlFor="vehicle1"> Below 11th</label>
               </div>
             </div>
           </div>
