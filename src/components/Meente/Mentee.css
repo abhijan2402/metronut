@@ -3,6 +3,7 @@
   padding: 2% 4%;
   align-items: center;
 }
+
 #mentee-header h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -18,9 +19,11 @@
   scroll-behavior: smooth;
   /* border: 2px solid red; */
 }
+
 #menteeCard::-webkit-scrollbar {
   display: none;
 }
+
 .menteecard-carousel {
   width: 340px;
   margin-inline: 22px;
@@ -31,16 +34,20 @@
   justify-content: center;
   align-items: center;
 }
+
 .menteecards img {
-  /* border: 3px solid #000; */
+  border: 2px solid black;
   height: 400px;
   width: 280px;
+  border-radius: 8px;
 }
+
 .menteecarousel-buttons {
   display: flex;
   justify-content: space-between;
   padding: 0 10%;
 }
+
 .menteecarousel-buttons button {
   font-size: 40px;
   border-radius: 50%;
@@ -57,28 +64,34 @@
     padding: 0 5%;
   }
 }
+
 @media only screen and (max-width: 918px) {
   .menteecarousel-buttons {
     padding: 0 0%;
     margin-left: 0=rem;
   }
+
   #mentee-header h1 {
     letter-spacing: 2px;
     font-size: 40px;
   }
 }
+
 @media only screen and (max-width: 619px) {
   .menteecarousel-buttons {
     padding: 0 0%;
   }
+
   #mentee-header h1 {
     letter-spacing: 2px;
     font-size: 40px;
   }
+
   .menteecarousel-buttons button {
     font-size: 30px;
     width: 3rem;
   }
+
   #mentee-header {
     padding: 4% 0%;
   }
@@ -89,7 +102,7 @@
     border-radius: 1rem;
   }
 
-  
+
 }
 
 @media only screen and (max-width: 571px) {
@@ -97,29 +110,35 @@
     letter-spacing: 2px;
     font-size: 30px;
   }
+
   .menteecarousel-buttons button {
     font-size: 30px;
     width: 3rem;
     margin-left: 2rem;
   }
+
   #mentee-header {
     padding: 4% 3%;
   }
+
   #mentee-header {
     display: flex;
     padding: 2% 0%;
     align-items: center;
   }
 }
+
 @media only screen and (max-width: 451px) {
   #mentee-header {
     display: flex;
     flex-direction: column;
   }
+
   .menteecarousel-buttons {
     justify-content: space-between;
     width: 100%;
   }
+
   .menteecarousel-buttons button {
     margin-left: 0rem;
   }
