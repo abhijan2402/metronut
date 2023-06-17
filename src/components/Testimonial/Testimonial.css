@@ -75,12 +75,16 @@
     .testimonial-card {
         width: 45%;
     }
+
+    
 }
 
 @media screen and (max-width: 650px) {
     .testimonial-card {
         width: 60%;
     }
+
+    
 }
 
 @media screen and (max-width: 450px) {
