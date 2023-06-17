@@ -12,7 +12,7 @@ const EnrollPlan = ({ closePage }) => {
             <div className="row  " id="enrollPlan-conatiner-sections">
               <div className="col-lg-3" id="enrollPlan-clo1">
                 <div className="enrollPlan-image">
-                  <Lottie animationData={effort} style={{ height: "160px" }} />
+                  <Lottie animationData={effort} style={{ height: "200px" }} />
                 </div>
                 <h1>
                   Your efforts deserve this<span>.</span>

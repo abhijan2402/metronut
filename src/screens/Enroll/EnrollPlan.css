@@ -117,6 +117,7 @@
 .social-section{
 display: flex;
 justify-content: space-evenly;
+align-items: center;
 background-color: #fff;
 padding: 3% 1%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -199,4 +200,24 @@ font-size: 35px;
     margin-bottom:20px ;
     width: 60%;
     }
+    .enrollPlan-conatiner {
+      border-radius: 10px;
+      box-shadow: 5px 5px 20px 2px #857e7e;    }
+}
+@media only screen and (max-width: 397px){
+  .enrollPlan-conatiner{
+    width: 100%;
+
+    padding: 0% 1% 0 1% ;
+  }
+  .social-section i{
+    font-size: 25px;
+    padding: 0% 0%;
+    }
+    .social-section h5{
+      font-size: 12px;
+      }
+      .social-section p{
+        font-size: 9px;
+        }
 }

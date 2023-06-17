@@ -8,8 +8,8 @@ import Courses from '../../components/Courses/Courses'
 const CarrerMentorship = () => {
   return (
     <>
-      <Navbar />
-      <div className='container mt-5'>
+    <Navbar />
+    <div className='container-fluid mt-5'>
 
         <Session />
         <Works />
