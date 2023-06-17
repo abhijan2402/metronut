@@ -4,7 +4,7 @@ const MenteeCard = ({ image }) => {
   return (
     <div className="menteecard-carousel ">
       <div className="menteecards">
-        <img src={image} alt="" className="img-fluid" />
+        <img src={image} alt="" />
       </div>
     </div>
   );

@@ -6,13 +6,15 @@ const Session = () => {
     <>
       <div className="SessionContainer rounded">
         <div className="Session-Content">
-          <div className="container" id="Session-ContentWrapper">
+          <div className="container-fluid" id="Session-ContentWrapper">
             <div className="row">
               <h1> Personal Mentorship Session by IITian</h1>
             </div>
             <div className="row justify-content-center mt-5">
               <div className="col-md-7" id="Session-Coloumn1">
                 <h2>Why should you go for a personal session?</h2>
+                <div className="coloumn1-list">
+
                 <ul>
                   <li>
                     <span>
@@ -55,6 +57,7 @@ const Session = () => {
                     </span>
                   </li>
                 </ul>
+                </div>
                 <p>
                   Get an edge over your competition by fetching the maximum out
                   of you. <br />

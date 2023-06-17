@@ -7,7 +7,7 @@ const CarrerMentorship = () => {
   return (
     <>
     <Navbar />
-    <div className='container mt-5'>
+    <div className='container-fluid mt-5'>
 
         <Session/>
     </div>

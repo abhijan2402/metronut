@@ -2,6 +2,7 @@ import React from "react";
 import "./Mentee.css";
 import MenteeCard from "./MenteeCard";
 import feedback from "../../assets/feedback.png";
+import mentor from '../../assets/mentor.jpg';
 
 const Mentee = () => {
   let box = document.querySelector("#menteeCard");
@@ -36,7 +37,7 @@ const Mentee = () => {
             </div>
           </div>
           <div className="row" id="menteeCard">
-            <MenteeCard image={feedback} />
+            <MenteeCard image={mentor} />
             <MenteeCard image={feedback} />
             <MenteeCard image={feedback} />
             <MenteeCard image={feedback} />
