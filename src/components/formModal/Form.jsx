@@ -46,6 +46,7 @@ function Form({ state }) {
             console.log('Document written with ID: ', res.id);
             setAniActive(true);
             setTimeout(() => {
+              state(false);
               setAniActive(false)
             }, 6000);
           })
