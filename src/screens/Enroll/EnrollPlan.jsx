@@ -1,50 +1,129 @@
 import React from "react";
 import Lottie from "lottie-react";
-import effort from '../../assets/effort.json';
+import "./EnrollPlan.css";
+import effort from "../../assets/effort.json";
 
 const EnrollPlan = ({ closePage }) => {
   return (
     <>
       <div className="container-fluid">
+        <div className="enrollPlan-maincontainer">
+          <div className="enrollPlan-conatiner">
+            <div className="row  " id="enrollPlan-conatiner-sections">
+              <div className="col-lg-3" id="enrollPlan-clo1">
+                <div className="enrollPlan-image">
+                  <Lottie animationData={effort} style={{ height: "160px" }} />
+                </div>
+                <h1>
+                  Your efforts deserve this<span>.</span>
+                </h1>
+                <div className="social-section">
+                  <i class="bi bi-whatsapp"></i>
+                  <div>
+                    <h5>Having toubles?</h5>
+                    <p>Get in touch with us</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-7" id="enrollPlan-clo2">
+                <div className="enrollPlan-clo2-heading">
+                  <h1>We have created best Mentorship plans for you</h1>
+                  <p>You get complete 1-on-1 Mentorshipe in both the plan.</p>
+                </div>
+                <div className="enrollPlan-clo2-section">
+                  <div className="enrollPlan-clo2-section1">
+                    <h5>
+                      <i class="bi bi-star"></i> Subodh
+                    </h5>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Personal IIT/AIIMS
+                      Mentor
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Regular Video Call
+                      Session
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Always connected
+                      trough chat
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Progress track and
+                      task assign
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Parents-Mentor Meet
+                    </p>
+                    <p>
+                      <i
+                        class="bi bi-check-circle-fill"
+                        style={{ color: "#fbc531" }}
+                      ></i>
+                      Doubt solving by mentor
+                    </p>
+                    <p>
+                      <i
+                        class="bi bi-check-circle-fill"
+                        style={{ color: "#fbc531" }}
+                      ></i>
+                      Learn the Topper's approach
+                    </p>
+                    <div className="enrollPlan-clo2-section1-btn">
+                      <button onClick={closePage}>
+                        Lets Do this <i class="bi bi-arrow-right-short"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="enrollPlan-clo2-section1">
+                    <h5>
+                      {" "}
+                      <i class="bi bi-star"></i>Subodh
+                    </h5>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Personal IIT/AIIMS
+                      Mentor
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Regular Video Call
+                      Session
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Always connected
+                      trough chat
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Progress track and
+                      task assign
+                    </p>
+                    <p>
+                      <i class="bi bi-check-circle-fill"></i>Parents-Mentor Meet
+                    </p>
+                    <p>
+                      <i
+                        class="bi bi-check-circle-fill"
+                        style={{ color: "#fbc531" }}
+                      ></i>
+                      Doubt solving by mentor
+                    </p>
+                    <p>
+                      <i
+                        class="bi bi-check-circle-fill"
+                        style={{ color: "#fbc531" }}
+                      ></i>
+                      Learn the Topper's approach
+                    </p>
 
-        <div className="row justify-content-evenly">
-            <div className="col-3">
-            <Lottie animationData={effort} />
-                <h1>Your efforts deserve this.</h1>
-            </div>
-            <div className="col-7">
-                <div>
-                <h4>We have created best Mentorship plans for you</h4>
-                <p>Yow get complete 1-on-1 Mentorshipe in both the plan.</p>
-                </div>
-                <div>
-                    <div>
-                        <h5>Subodh</h5>
-                        <p><i class="bi bi-check-circle"></i>Personal IIT/AIIMS Mentor</p>
-                        <p><i class="bi bi-check-circle"></i>Regular Video Call Session</p>
-                        <p><i class="bi bi-check-circle"></i>Always connected trough chat</p>
-                        <p><i class="bi bi-check-circle"></i>Progress track and task assign</p>
-                        <p><i class="bi bi-check-circle"></i>Parents-Mentor Meet</p>
-                        <p><i class="bi bi-check-circle"></i>Doubt solving by mentor</p>
-                        <p><i class="bi bi-check-circle"></i>Learn the Topper's approach</p>
-                        <button onClick={closePage}>Lets Do this</button>
+                    <div className="enrollPlan-clo2-section1-btn">
+                      <button onClick={closePage}>
+                        Lets Do this <i class="bi bi-arrow-right-short"></i>
+                      </button>
                     </div>
-                    <div>
-                        <h5>Subodh</h5>
-                        <p><i class="bi bi-check-circle"></i>Personal IIT/AIIMS Mentor</p>
-                        <p><i class="bi bi-check-circle"></i>Regular Video Call Session</p>
-                        <p><i class="bi bi-check-circle"></i>Always connected trough chat</p>
-                        <p><i class="bi bi-check-circle"></i>Progress track and task assign</p>
-                        <p><i class="bi bi-check-circle"></i>Parents-Mentor Meet</p>
-                        <p><i class="bi bi-check-circle"></i>Doubt solving by mentor</p>
-                        <p><i class="bi bi-check-circle"></i>Learn the Topper's approach</p>
-                        <button onClick={closePage}>Lets Do this</button>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-          
+          </div>
         </div>
-
         <div className="row justify-content-center">
           <div className="questions">
             <h1>Frequently asked Questions</h1>
