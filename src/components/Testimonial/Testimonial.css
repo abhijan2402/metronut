@@ -46,7 +46,7 @@
 }
 
 .tesimonial-img {
-    width: 60%;
+    width: 40%;
 }
 
 .testimonial-name {
@@ -105,4 +105,16 @@
     }
     
     
+}
+
+@media screen and (max-width: 320px) {
+    .testimonial-name {
+        font-size: 1.5rem;
+        margin-bottom: -5px;
+        margin-top: 5px;
+    }
+
+    .testimonial-desc {
+        font-size: 1rem;
+    }
 }
