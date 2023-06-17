@@ -272,16 +272,10 @@
   }
 
   .landing-price {
-    display: flex;
-    background-color: #ff6600;
-    flex-wrap: wrap;
-    color: #000000;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
     padding: 0.7rem 1rem;
-    border-radius: 0.7rem;
-    cursor: default;
   }
 
   .landing-price h2 {
@@ -313,5 +307,30 @@
 
   .collges {
     border: 4px solid #fff;
+  }
+
+  .landing-price {
+    padding: 0.7rem;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .landing-price h2 {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .landing-price {
+    padding: 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .landing-price h2 {
+    font-size: 0.8rem;
   }
 }
