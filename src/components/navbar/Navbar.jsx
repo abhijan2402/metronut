@@ -33,7 +33,8 @@ const Navbar = () => {
                 <i className="bi bi-x-circle-fill"></i>
               </button>
               <li>
-                <Link
+                <Link 
+                onClick={() => setToggle(false)}
                   className={`${pathname === '/metronut' && 'activeLink'}`}
                   to={'/metronut'}
                 >
@@ -42,6 +43,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/enroll' && 'activeLink'
                   }`}
@@ -52,6 +54,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/why-metorship' && 'activeLink'
                   }`}
@@ -62,6 +65,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/neet-metorship' && 'activeLink'
                   }`}
@@ -72,6 +76,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/career-mentorship' && 'activeLink'
                   }`}
@@ -82,6 +87,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/about' && 'activeLink'
                   }`}

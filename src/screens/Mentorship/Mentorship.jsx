@@ -183,7 +183,7 @@ const Mentorship = () => {
                   such that the range of your results is maximum!{" "}
                 </p>
                 <button id="content3_details-btn">
-                  Get your mentor <i class="bi bi-arrow-right-short"></i>
+                  Get your mentor <i className="bi bi-arrow-right-short"></i>
                 </button>
               </div>
             </div>
@@ -221,10 +221,10 @@ const Mentorship = () => {
                 </div>
                 <div className="col-md-10" id="content6_details-btns">
                   <button id="content6_details-btn1">
-                    Get your mentor <i class="bi bi-arrow-right-short"></i>
+                    Get your mentor <i className="bi bi-arrow-right-short"></i>
                   </button>
                   <button id="content6_details-btn2">
-                    Get your mentor <i class="bi bi-arrow-right-short"></i>
+                    Get your mentor <i className="bi bi-arrow-right-short"></i>
                   </button>
                 </div>
               </div>

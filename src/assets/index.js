@@ -11,20 +11,12 @@ import madras from './images/IIT_Madras_Logo.svg.png';
 import bombay from './images/Indian_Institute_of_Technology_Bombay_Logo.svg.png';
 import delhi from './images/Indian_Institute_of_Technology_Delhi_Logo.svg.png';
 import team from './images/team checklist-pana.svg';
-import ball from './images/ball.png'
-import check1 from './images/check-list1.png'
-import check2 from './images/check-list2.png'
-import check3 from './images/check-list3.png'
-import check4 from './images/check-list4.png'
-import background from './images/work-background.svg'
-import background2 from './images/work-background2.svg'
 import checkin1 from './images/checkin1.png'
 import checkin2 from './images/checkin2.png'
 import checkin3 from './images/checkin3.png'
 import checkin4 from './images/checkin4.png'
 
 export {
-  ball,
   logo1,
   logo2,
   logo3,
@@ -38,12 +30,6 @@ export {
   bombay,
   delhi,
   team,
-  check1,
-  check2,
-  check3,
-  check4,
-  background,
-  background2,
   checkin1,
   checkin2,
   checkin3,
