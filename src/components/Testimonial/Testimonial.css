@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 2;
 }
 
 .testimonial-btn button {
@@ -61,9 +65,10 @@
     font-weight: 700;
 }
 
-.testimonial-heading h3 {
+.carousel-item h3 {
     font-size: 1.5rem;
     font-weight: 500;
+    margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -84,10 +89,10 @@
     }
 
     .testimonial-btn button {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         
-        font-size: 2rem;
+        font-size: 1.5rem;
        
     }
 
@@ -95,7 +100,7 @@
         font-size: 2.5rem;
     }
     
-    .testimonial-heading h3 {
+    .carousel-item h3 {
         font-size: 1rem;
     }
     

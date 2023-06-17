@@ -4,15 +4,34 @@ import { downArrow } from '../../assets';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const ProblemStatement = () => {
-  const [statementOneToggle, setStatementOneToggle] = useState(false);
-  const [statementTwoToggle, setStatementTwoToggle] = useState(false);
-  const [statementThreeToggle, setStatementThreeToggle] = useState(false);
-  const [statementFourToggle, setStatementFourToggle] = useState(false);
-  const [statementFiveToggle, setStatementFiveToggle] = useState(false);
-  const [statementSixToggle, setStatementSixToggle] = useState(false);
-  const [statementSevenToggle, setStatementSevenToggle] = useState(false);
-  const [statementEightToggle, setStatementEightToggle] = useState(false);
-  const [statementNineToggle, setStatementNineToggle] = useState(false);
+  const [statementToggle, setStatementToggle] = useState({
+    statementOne: false,
+    statementTwo: false,
+    statementThree: false,
+    statementFour: false,
+    statementFive: false,
+    statementSix: false,
+    statementSeven: false,
+    statementEight: false,
+    statementNine: false,
+  });
+
+  const handleToggle = (statement) => {
+    setStatementToggle((prevState) => ({
+      ...prevState,
+      [statement]: !prevState[statement],
+    }));
+
+    // Close other statements
+    for (let key in statementToggle) {
+      if (key !== statement) {
+        setStatementToggle((prevState) => ({
+          ...prevState,
+          [key]: false,
+        }));
+      }
+    }
+  };
 
   return (
     <div className="container mt-5 pt-3 pt-md-5">
@@ -25,61 +44,61 @@ const ProblemStatement = () => {
         <div className="problemStatement-group">
           <ProblemStatementCard
             title={'Problem Statement One (In brief)'}
-            toggleFunc={setStatementOneToggle}
-            toggle={statementOneToggle}
+            toggleFunc={() => handleToggle('statementOne')}
+            toggle={statementToggle.statementOne}
           />
 
           <ProblemStatementCard
             title={'Problem Statement Two (In brief)'}
-            toggleFunc={setStatementTwoToggle}
-            toggle={statementTwoToggle}
+            toggleFunc={() => handleToggle('statementTwo')}
+            toggle={statementToggle.statementTwo}
           />
 
           <ProblemStatementCard
             title={'Problem Statement Three (In brief)'}
-            toggleFunc={setStatementThreeToggle}
-            toggle={statementThreeToggle}
+            toggleFunc={() => handleToggle('statementThree')}
+            toggle={statementToggle.statementThree}
           />
 
           <ProblemStatementCard
-            title={'Problem Statement Four (In brief)'}
-            toggleFunc={setStatementFourToggle}
-            toggle={statementFourToggle}
+            title={'Problem Statement Three (In brief)'}
+            toggleFunc={() => handleToggle('statementFour')}
+            toggle={statementToggle.statementFour}
           />
 
           <ProblemStatementCard
-            title={'Problem Statement Five (In brief)'}
-            toggleFunc={setStatementFiveToggle}
-            toggle={statementFiveToggle}
+            title={'Problem Statement Three (In brief)'}
+            toggleFunc={() => handleToggle('statementFive')}
+            toggle={statementToggle.statementFive}
           />
 
           <ProblemStatementCard
-            title={'Problem Statement Six (In brief)'}
-            toggleFunc={setStatementSixToggle}
-            toggle={statementSixToggle}
+            title={'Problem Statement Three (In brief)'}
+            toggleFunc={() => handleToggle('statementSix')}
+            toggle={statementToggle.statementSix}
           />
 
           <ProblemStatementCard
-            title={'Problem Statement Seven (In brief)'}
-            toggleFunc={setStatementSevenToggle}
-            toggle={statementSevenToggle}
+            title={'Problem Statement Three (In brief)'}
+            toggleFunc={() => handleToggle('statementSeven')}
+            toggle={statementToggle.statementSeven}
           />
 
           <ProblemStatementCard
-            title={'Problem Statement Eight (In brief)'}
-            toggleFunc={setStatementEightToggle}
-            toggle={statementEightToggle}
+            title={'Problem Statement Three (In brief)'}
+            toggleFunc={() => handleToggle('statementEight')}
+            toggle={statementToggle.statementEight}
           />
 
           <ProblemStatementCard
-            title={'Problem Statement Nine (In brief)'}
-            toggleFunc={setStatementNineToggle}
-            toggle={statementNineToggle}
+            title={'Problem Statement Three (In brief)'}
+            toggleFunc={() => handleToggle('statementNine')}
+            toggle={statementToggle.statementNine}
           />
         </div>
 
-        <div className="problem-img" style={{height: 400}}>
-          <p>Image Related </p>
+        <div className="problem-img" style={{ height: 400 }}>
+          <p>Image Related</p>
         </div>
       </div>
     </div>
@@ -88,8 +107,8 @@ const ProblemStatement = () => {
 
 const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
   const variants = {
-    open: { height: '110px' },
-    closed: { height: '0px' },
+    open: { height: '110px', transition: { duration: 0.3 } },
+    closed: { height: '0px', transition: { duration: 0 } },
   };
 
   return (
@@ -104,8 +123,7 @@ const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
               animate="open"
               exit="closed"
               variants={variants}
-              transition={{ duration: 0.3, exit: { duration: 0.1 } }}
-              className='problem-statement-textArea-outer'
+              className="problem-statement-textArea-outer"
             >
               <textarea />
             </motion.div>
@@ -113,7 +131,7 @@ const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
         </AnimatePresence>
       </div>
 
-      <button onClick={() => toggleFunc(!toggle)}>
+      <button onClick={toggleFunc}>
         <img src={downArrow} alt="" /> More
       </button>
     </div>

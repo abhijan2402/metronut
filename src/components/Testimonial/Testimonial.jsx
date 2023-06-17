@@ -6,16 +6,9 @@ const Testimonial = () => {
     <div className="container mt-5 pt-3 pt-md-5 mb-md-5 pb-5 pb-3">
       <div className="testimonial-heading">
         <h1 className="text-center">Testimonials</h1>
-        <h3 className="text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod temporincididunt utlabore et dolore magna aliqua. Ut enim ad
-          minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod temporincididunt utlabore et dolore magna aliqua. Ut
-          enim ad minim veniam.
-        </h3>
       </div>
       <div className="mt-5 pt-2 pt-md-5">
-        <div className="row">
+        <div className="row" style={{position: 'relative'}}>
           <div className="testimonial-btn">
             <button
               className="testimonial-btn-prev"
@@ -43,6 +36,13 @@ const Testimonial = () => {
             >
               <div className="carousel-inner">
                 <div className="carousel-item active">
+                  <h3 className="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod temporincididunt utlabore et dolore magna aliqua.
+                    Ut enim ad minim veniam.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod temporincididunt
+                    utlabore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </h3>
                   <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
@@ -50,13 +50,18 @@ const Testimonial = () => {
                       alt=""
                     />
                     <h2 className="testimonial-name">Vinay Kushwaha</h2>
-                    <p className="testimonial-desc">
-                      B.tech IIT Bombay{' '}
-                      
-                    </p>
+                    <p className="testimonial-desc">B.tech IIT Bombay </p>
                   </div>
                 </div>
+
                 <div className="carousel-item">
+                  <h3 className="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod temporincididunt utlabore et dolore magna aliqua.
+                    Ut enim ad minim veniam.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod temporincididunt
+                    utlabore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </h3>
                   <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
@@ -64,12 +69,18 @@ const Testimonial = () => {
                       alt=""
                     />
                     <h2 className="testimonial-name">Vinay Kushwaha</h2>
-                    <p className="testimonial-desc">
-                      B.tech IIT Bombay{' '}
-                    </p>
+                    <p className="testimonial-desc">B.tech IIT Bombay </p>
                   </div>
                 </div>
+
                 <div className="carousel-item">
+                  <h3 className="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod temporincididunt utlabore et dolore magna aliqua.
+                    Ut enim ad minim veniam.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod temporincididunt
+                    utlabore et dolore magna aliqua. Ut enim ad minim veniam.
+                  </h3>
                   <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
@@ -77,10 +88,7 @@ const Testimonial = () => {
                       alt=""
                     />
                     <h2 className="testimonial-name">Vinay Kushwaha</h2>
-                    <p className="testimonial-desc">
-                      B.tech IIT Bombay{' '}
-                     
-                    </p>
+                    <p className="testimonial-desc">B.tech IIT Bombay </p>
                   </div>
                 </div>
               </div>

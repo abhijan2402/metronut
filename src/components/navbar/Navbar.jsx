@@ -8,17 +8,7 @@ const Navbar = () => {
   const { pathname } = window.location;
   const { width } = window.screen;
   const [toggle, setToggle] = useState(false);
-  useEffect(() => {
-    if (toggle) {
-      document.body.classList.add('disable-scroll');
-    } else {
-      document.body.classList.remove('disable-scroll');
-    }
-
-    return () => {
-      document.body.classList.remove('disable-scroll');
-    };
-  }, [toggle]);
+ 
   return (
     <nav className="navbar container-fluid">
       <div className="brand">
@@ -34,7 +24,6 @@ const Navbar = () => {
               </button>
               <li>
                 <Link 
-                onClick={() => setToggle(false)}
                   className={`${pathname === '/metronut' && 'activeLink'}`}
                   to={'/metronut'}
                 >
@@ -43,7 +32,6 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/enroll' && 'activeLink'
                   }`}
@@ -54,7 +42,6 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/why-metorship' && 'activeLink'
                   }`}
@@ -65,7 +52,6 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/neet-metorship' && 'activeLink'
                   }`}
@@ -76,7 +62,6 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/career-mentorship' && 'activeLink'
                   }`}
@@ -87,7 +72,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                onClick={() => setToggle(false)}
+                
                   className={`${
                     pathname === '/metronut/about' && 'activeLink'
                   }`}
@@ -102,9 +87,9 @@ const Navbar = () => {
       <AnimatePresence>
         {toggle && (
           <motion.div
-            initial={{ x: '100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
+            initial={{ y: '-100%' }}
+            animate={{ y: 0 }}
+            exit={{ y: '-100%' }}
             transition={{ type: 'tween', damping: 20, stiffness: 200 }}
             className={`navabr-links-outer mobile-menu  ${
               !toggle? 'hide' : ''
@@ -116,6 +101,7 @@ const Navbar = () => {
               </button>
               <li>
                 <Link
+               onClick={() => setToggle(false)}
                   className={`${pathname === '/metronut' && 'activeLink'}`}
                   to={'/metronut'}
                 >
@@ -124,6 +110,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/enroll' && 'activeLink'
                   }`}
@@ -134,6 +121,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/why-metorship' && 'activeLink'
                   }`}
@@ -144,6 +132,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/neet-metorship' && 'activeLink'
                   }`}
@@ -154,6 +143,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/career-mentorship' && 'activeLink'
                   }`}
@@ -164,6 +154,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                onClick={() => setToggle(false)}
                   className={`${
                     pathname === '/metronut/about' && 'activeLink'
                   }`}
