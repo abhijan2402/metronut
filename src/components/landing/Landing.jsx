@@ -81,7 +81,7 @@ const Landing = () => {
 
           <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <span className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <span style={{color: '#000'}}>like</span></span> </h3>
 
-        <div className='d-flex px-4 py-3  gap-2 gap-md-5 collges' >
+        <div className='d-flex px-2 py-2 px-md-4 py-md-3  gap-1 gap-md-5 collges' >
           <img src={bombay} alt="" />
           <img src={madras} alt="" />
           <img src={kanpur} alt="" />
