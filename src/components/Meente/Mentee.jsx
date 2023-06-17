@@ -1,7 +1,7 @@
 import React from "react";
 import "./Mentee.css";
 import MenteeCard from "./MenteeCard";
-import feedback from "../../assets/feedback.png";
+import whatsapp from "../../assets/whatsapp.png";
 
 
 const Mentee = () => {
@@ -37,21 +37,21 @@ const Mentee = () => {
             </div>
           </div>
           <div className="row" id="menteeCard">
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
-            <MenteeCard image={feedback} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
+            <MenteeCard image={whatsapp} />
           </div>
         </div>
       </div>
