@@ -17,9 +17,9 @@ function VIsion() {
                     <div className='MissonDesc'>
                         {/* <p style={{ margin: "auto", width: "auto", width: "80%", textAlign: "center", marginTop: "2%" }}>Remove the excuse that</p> */}
                         <p>
-                            To provide the best mentor at an
-                            affordable price so that any student
-                            can afford it and achieve equally
+                            To provide the best mentor <span style={{ color: "orange" }}>at an
+                                affordable price so that any student
+                                can afford it </span>and achieve equally
                             better results as well-funded
                             students.</p>
                     </div>

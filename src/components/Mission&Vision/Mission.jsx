@@ -13,8 +13,8 @@ function Mission() {
                     <div className='MissonDesc'>
                         <p style={{ margin: "auto", width: "auto", width: "80%", textAlign: "center", marginTop: "2%" }}>Remove the excuse that</p>
                         <p>
-                            "I did not do well because
-                            I didn't have proper guidance"
+                            <span style={{ color: "orange" }}> I did not do well because
+                                I didn't have proper guidance </span>
                             because now we are providing the
                             best mentor from your dream college.</p>
                     </div>
