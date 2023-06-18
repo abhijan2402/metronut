@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/metronut/static/css/main.57f33b51.css",
-    "main.js": "/metronut/static/js/main.84613d23.js",
+    "main.css": "/metronut/static/css/main.35ef3321.css",
+    "main.js": "/metronut/static/js/main.cb629820.js",
     "static/media/whatsapp.png": "/metronut/static/media/whatsapp.fd7eaac0521c1be99c95.png",
     "static/media/mentor.jpg": "/metronut/static/media/mentor.33532a60b49b3811ba59.jpg",
     "static/media/Indian_Institute_of_Technology_Bombay_Logo.svg.png": "/metronut/static/media/Indian_Institute_of_Technology_Bombay_Logo.svg.e2c5604d67511fc8c874.png",
@@ -23,11 +23,11 @@
     "static/media/angle-down-solid.svg": "/metronut/static/media/angle-down-solid.b0ee6c7e43846a3ee68c0a7056f5b490.svg",
     "static/media/plus.svg": "/metronut/static/media/plus.e4d7be0f630c6dbc8d41.svg",
     "static/media/dash.svg": "/metronut/static/media/dash.d4499b1e324d682106b3.svg",
-    "main.57f33b51.css.map": "/metronut/static/css/main.57f33b51.css.map",
-    "main.84613d23.js.map": "/metronut/static/js/main.84613d23.js.map"
+    "main.35ef3321.css.map": "/metronut/static/css/main.35ef3321.css.map",
+    "main.cb629820.js.map": "/metronut/static/js/main.cb629820.js.map"
   },
   "entrypoints": [
-    "static/css/main.57f33b51.css",
-    "static/js/main.84613d23.js"
+    "static/css/main.35ef3321.css",
+    "static/js/main.cb629820.js"
   ]
 }
