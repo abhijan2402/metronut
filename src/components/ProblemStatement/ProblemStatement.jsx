@@ -2,6 +2,24 @@ import React, { useState } from 'react';
 import './ProblemStatement.css';
 import { downArrow } from '../../assets';
 import { AnimatePresence, motion } from 'framer-motion';
+const image1 =
+  'https://www.potential.com/wp-content/uploads/2017/11/problem-solving.png';
+const image2 =
+  'https://www.indraconsulting.com/wp-content/uploads/2011/11/problem-solution-1024x775.jpg';
+const image3 =
+  'https://www.potential.com/wp-content/uploads/2017/11/problem-solving.png';
+const image4 =
+  'https://www.indraconsulting.com/wp-content/uploads/2011/11/problem-solution-1024x775.jpg';
+const image5 =
+  'https://www.potential.com/wp-content/uploads/2017/11/problem-solving.png';
+const image6 =
+  'https://www.indraconsulting.com/wp-content/uploads/2011/11/problem-solution-1024x775.jpg';
+const image7 =
+  'https://www.potential.com/wp-content/uploads/2017/11/problem-solving.png';
+const image8 =
+  'https://www.indraconsulting.com/wp-content/uploads/2011/11/problem-solution-1024x775.jpg';
+  const image9 =
+  'https://www.indraconsulting.com/wp-content/uploads/2011/11/problem-solution-1024x775.jpg';
 
 const ProblemStatement = () => {
   const [statementToggle, setStatementToggle] = useState({
@@ -15,6 +33,8 @@ const ProblemStatement = () => {
     statementEight: false,
     statementNine: false,
   });
+
+  const [banner, setBanner] = useState(image1);
 
   const handleToggle = (statement) => {
     setStatementToggle((prevState) => ({
@@ -38,7 +58,10 @@ const ProblemStatement = () => {
       id: 1,
       title: 'Problem Statement One (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementOne'),
+      toggleFunc: () => {
+        handleToggle('statementOne');
+        setBanner(image1);
+      },
       toggle: statementToggle.statementOne,
     },
 
@@ -46,16 +69,21 @@ const ProblemStatement = () => {
       id: 2,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementTwo'),
+      toggleFunc: () => {
+        handleToggle('statementTwo');
+        setBanner(image2);
+      },
       toggle: statementToggle.statementTwo,
     },
 
-    
     {
       id: 3,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementThree'),
+      toggleFunc: () => {
+        handleToggle('statementThree');
+        setBanner(image3);
+      },
       toggle: statementToggle.statementThree,
     },
 
@@ -63,7 +91,10 @@ const ProblemStatement = () => {
       id: 4,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementFour'),
+      toggleFunc: () => {
+        handleToggle('statementFour');
+        setBanner(image4);
+      },
       toggle: statementToggle.statementFour,
     },
 
@@ -71,7 +102,10 @@ const ProblemStatement = () => {
       id: 5,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementFive'),
+      toggleFunc: () => {
+        handleToggle('statementFive');
+        setBanner(image5);
+      },
       toggle: statementToggle.statementFive,
     },
 
@@ -79,7 +113,10 @@ const ProblemStatement = () => {
       id: 6,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementSix'),
+      toggleFunc: () => {
+        handleToggle('statementSix');
+        setBanner(image6);
+      },
       toggle: statementToggle.statementSix,
     },
 
@@ -87,7 +124,10 @@ const ProblemStatement = () => {
       id: 7,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementSeven'),
+      toggleFunc: () => {
+        handleToggle('statementSeven');
+        setBanner(image7);
+      },
       toggle: statementToggle.statementSeven,
     },
 
@@ -95,7 +135,10 @@ const ProblemStatement = () => {
       id: 8,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementEight'),
+      toggleFunc: () => {
+        handleToggle('statementEight');
+        setBanner(image8);
+      },
       toggle: statementToggle.statementEight,
     },
 
@@ -103,10 +146,9 @@ const ProblemStatement = () => {
       id: 9,
       title: 'Problem Statement Two (In brief)',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
-      toggleFunc: () => handleToggle('statementNine'),
+      toggleFunc: () => {handleToggle('statementNine'); setBanner(image9);},
       toggle: statementToggle.statementNine,
     },
-
   ];
 
   return (
@@ -124,14 +166,25 @@ const ProblemStatement = () => {
         </div>
 
         <div className="problem-img" style={{ height: 400 }}>
-          <p>Image Related</p>
+          <img
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            src={banner}
+            alt=""
+          />
         </div>
       </div>
     </div>
   );
 };
 
-const ProblemStatementCard = ({ title, toggleFunc, toggle, text, id }) => {
+const ProblemStatementCard = ({
+  title,
+  toggleFunc,
+  toggle,
+  text,
+  id,
+  changeImg,
+}) => {
   const variants = {
     open: { height: '110px', transition: { duration: 0.3 } },
     closed: { height: '0px', transition: { duration: 0 } },
