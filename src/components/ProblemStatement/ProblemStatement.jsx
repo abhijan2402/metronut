@@ -33,6 +33,82 @@ const ProblemStatement = () => {
     }
   };
 
+  const problemStatementData = [
+    {
+      id: 1,
+      title: 'Problem Statement One (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementOne'),
+      toggle: statementToggle.statementOne,
+    },
+
+    {
+      id: 2,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementTwo'),
+      toggle: statementToggle.statementTwo,
+    },
+
+    
+    {
+      id: 3,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementThree'),
+      toggle: statementToggle.statementThree,
+    },
+
+    {
+      id: 4,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementFour'),
+      toggle: statementToggle.statementFour,
+    },
+
+    {
+      id: 5,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementFive'),
+      toggle: statementToggle.statementFive,
+    },
+
+    {
+      id: 6,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementSix'),
+      toggle: statementToggle.statementSix,
+    },
+
+    {
+      id: 7,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementSeven'),
+      toggle: statementToggle.statementSeven,
+    },
+
+    {
+      id: 8,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementEight'),
+      toggle: statementToggle.statementEight,
+    },
+
+    {
+      id: 9,
+      title: 'Problem Statement Two (In brief)',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum et ipsam ratione eius. Distinctio.',
+      toggleFunc: () => handleToggle('statementNine'),
+      toggle: statementToggle.statementNine,
+    },
+
+  ];
+
   return (
     <div className="container mt-5 pt-3 pt-md-5">
       <div className="problemStatement-heading">
@@ -42,59 +118,9 @@ const ProblemStatement = () => {
 
       <div className="problemStatement-content">
         <div className="problemStatement-group">
-          <ProblemStatementCard
-            title={'Problem Statement One (In brief)'}
-            toggleFunc={() => handleToggle('statementOne')}
-            toggle={statementToggle.statementOne}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Two (In brief)'}
-            toggleFunc={() => handleToggle('statementTwo')}
-            toggle={statementToggle.statementTwo}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Three (In brief)'}
-            toggleFunc={() => handleToggle('statementThree')}
-            toggle={statementToggle.statementThree}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Three (In brief)'}
-            toggleFunc={() => handleToggle('statementFour')}
-            toggle={statementToggle.statementFour}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Three (In brief)'}
-            toggleFunc={() => handleToggle('statementFive')}
-            toggle={statementToggle.statementFive}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Three (In brief)'}
-            toggleFunc={() => handleToggle('statementSix')}
-            toggle={statementToggle.statementSix}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Three (In brief)'}
-            toggleFunc={() => handleToggle('statementSeven')}
-            toggle={statementToggle.statementSeven}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Three (In brief)'}
-            toggleFunc={() => handleToggle('statementEight')}
-            toggle={statementToggle.statementEight}
-          />
-
-          <ProblemStatementCard
-            title={'Problem Statement Three (In brief)'}
-            toggleFunc={() => handleToggle('statementNine')}
-            toggle={statementToggle.statementNine}
-          />
+          {problemStatementData?.map((item) => (
+            <ProblemStatementCard key={item.id} {...item} />
+          ))}
         </div>
 
         <div className="problem-img" style={{ height: 400 }}>
@@ -105,7 +131,7 @@ const ProblemStatement = () => {
   );
 };
 
-const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
+const ProblemStatementCard = ({ title, toggleFunc, toggle, text, id }) => {
   const variants = {
     open: { height: '110px', transition: { duration: 0.3 } },
     closed: { height: '0px', transition: { duration: 0 } },
@@ -114,7 +140,7 @@ const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
   return (
     <div className="problemStatement-item pt">
       <div>
-        <p>{title}</p>
+        <p>{id + '. ' + title}</p>
 
         <AnimatePresence>
           {toggle && (
@@ -125,7 +151,7 @@ const ProblemStatementCard = ({ title, toggleFunc, toggle }) => {
               variants={variants}
               className="problem-statement-textArea-outer"
             >
-              <textarea />
+              <textarea value={text} />
             </motion.div>
           )}
         </AnimatePresence>

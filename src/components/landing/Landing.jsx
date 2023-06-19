@@ -1,8 +1,13 @@
 import React from 'react';
 import './Landing.css';
 import { bombay, delhi, kanpur, kharappur, madras, roorkee, userFill, userOutline } from '../../assets';
+import mentor1 from '../../assets/mentor.jpg'
+import mentor2 from '../../assets/mentor.jpg'
+import mentor3 from '../../assets/mentor.jpg'
+import { useNavigate } from 'react-router-dom';
 
 const Landing = () => {
+  const navigate = useNavigate()
   return (
     <div className="landing-container">
       <h1>
@@ -12,7 +17,7 @@ const Landing = () => {
         1:1 personal mentorship with iitian helps you to achieve your dream IIT
       </p>
 
-      <div className="landing-price">
+      <div className="landing-price" onClick={() => navigate('/metronut/career-mentorship')}>
         <h2>MENTORSHIP SESSION &nbsp;</h2>
         <h2>
           {' '}
@@ -32,9 +37,9 @@ const Landing = () => {
 
       <div className='landing-rating'>
         <div className='landing-rating-imges'>
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" />
+          <img src={mentor1} alt="" />
+          <img src={mentor2} alt="" />
+          <img src={mentor3} alt="" />
         </div>
 
         <div className='landing-rating-desc'>

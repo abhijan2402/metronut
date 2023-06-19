@@ -1,5 +1,8 @@
 import React from 'react';
 import './Testimonial.css';
+import mentor1 from '../../assets/mentor.jpg'
+import mentor2 from '../../assets/mentor.jpg'
+import mentor3 from '../../assets/mentor.jpg'
 
 const Testimonial = () => {
   return (
@@ -46,7 +49,7 @@ const Testimonial = () => {
                   <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
-                      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                      src={mentor1}
                       alt=""
                     />
                     <h2 className="testimonial-name">Vinay Kushwaha</h2>
@@ -65,7 +68,7 @@ const Testimonial = () => {
                   <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
-                      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                      src={mentor2}
                       alt=""
                     />
                     <h2 className="testimonial-name">Vinay Kushwaha</h2>
@@ -84,7 +87,7 @@ const Testimonial = () => {
                   <div className="testimonial-card card m-auto">
                     <img
                       className="rounded-circle tesimonial-img"
-                      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                      src={mentor3}
                       alt=""
                     />
                     <h2 className="testimonial-name">Vinay Kushwaha</h2>

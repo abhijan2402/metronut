@@ -1,6 +1,7 @@
 import React from 'react';
 import './FounderDesk.css';
 import Header from '../Header/Header';
+import founder from '../../assets/mentor.jpg'
 
 const FounderDesk = () => {
   return (
@@ -11,7 +12,7 @@ const FounderDesk = () => {
         <div className="col-md-3 col-12 text-center">
           <img
           className='rounded-circle founder-desk-img'
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            src={founder}
             alt=""
           />
           <h2 className='founder-name'>Vinay Kushwaha</h2>
