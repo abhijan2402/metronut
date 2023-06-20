@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Lottie from "lottie-react";
 import "./EnrollPlan.css";
 import effort from "../../assets/effort.json";
 
-const EnrollPlan = ({ closePage }) => {
+const EnrollPlan = () => {
+  // const [page, setPage] = useState();
+  // const setplanPage = () => page;
+
   return (
     <>
       <div className="container-fluid">
@@ -33,7 +36,7 @@ const EnrollPlan = ({ closePage }) => {
                 <div className="enrollPlan-clo2-section">
                   <div className="enrollPlan-clo2-section1">
                     <h5>
-                      <i class="bi bi-star"></i> Subodh
+                      <i class="bi bi-star"></i> Subodh1
                     </h5>
                     <p>
                       <i class="bi bi-check-circle-fill"></i>Personal IIT/AIIMS
@@ -69,7 +72,7 @@ const EnrollPlan = ({ closePage }) => {
                       Learn the Topper's approach
                     </p>
                     <div className="enrollPlan-clo2-section1-btn">
-                      <button onClick={closePage}>
+                      <button>
                         Lets Do this <i class="bi bi-arrow-right-short"></i>
                       </button>
                     </div>
@@ -77,7 +80,7 @@ const EnrollPlan = ({ closePage }) => {
                   <div className="enrollPlan-clo2-section1">
                     <h5>
                       {" "}
-                      <i class="bi bi-star"></i>Subodh
+                      <i class="bi bi-star"></i>Subodh2
                     </h5>
                     <p>
                       <i class="bi bi-check-circle-fill"></i>Personal IIT/AIIMS
@@ -114,7 +117,7 @@ const EnrollPlan = ({ closePage }) => {
                     </p>
 
                     <div className="enrollPlan-clo2-section1-btn">
-                      <button onClick={closePage}>
+                      <button>
                         Lets Do this <i class="bi bi-arrow-right-short"></i>
                       </button>
                     </div>
