@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import "./Mentorship.css";
 import boy1 from "../../assets/boy1.json";
@@ -14,6 +15,7 @@ import Courses from "../../components/Courses/Courses";
 import Navbar from "../../components/navbar/Navbar";
 
 const Mentorship = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -182,7 +184,7 @@ const Mentorship = () => {
                   </b>{" "}
                   such that the range of your results is maximum!{" "}
                 </p>
-                <button id="content3_details-btn">
+                <button onClick={()=> navigate("/metronut/enroll")} id="content3_details-btn">
                   Get your mentor <i className="bi bi-arrow-right-short"></i>
                 </button>
               </div>
@@ -221,9 +223,9 @@ const Mentorship = () => {
                 </div>
                 <div className="col-md-10" id="content6_details-btns">
                   <button id="content6_details-btn1">
-                    Get your mentor <i className="bi bi-arrow-right-short"></i>
+                    Get your Demo <i className="bi bi-arrow-right-short"></i>
                   </button>
-                  <button id="content6_details-btn2">
+                  <button onClick={()=> navigate("/metronut/enroll")} id="content6_details-btn2">
                     Get your mentor <i className="bi bi-arrow-right-short"></i>
                   </button>
                 </div>
