@@ -9,7 +9,7 @@
     align-items: center;
     align-self: center;
     border-radius: 10px;
-    
+
     position: fixed;
     left: 50%;
     top: 50%;
@@ -46,7 +46,7 @@
 }
 
 .FormHeadingDiv {
-    width: 40%;
+    width: 42%;
 }
 
 .OuterFormDiv {
@@ -56,7 +56,7 @@
 .InputMainDiv {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     margin-left: 5%;
     align-items: flex-start;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import "./Mentorship.css";
@@ -13,13 +13,21 @@ import team from "../../assets/team.json";
 import thinking from "../../assets/thinking.json";
 import Courses from "../../components/Courses/Courses";
 import Navbar from "../../components/navbar/Navbar";
+import Form from "../../components/formModal/Form";
 
 const Mentorship = () => {
+  const [FormActive, setFormActive] = useState(false)
+
   const navigate = useNavigate();
   return (
     <>
       <Navbar />
+
       <div className="mentorContianer">
+        {FormActive ?
+          <Form state={() => { setFormActive(false) }} /> : null
+
+        }
         <div className="mentorContent">
           <div className="container-fluid" id="container">
             <div className="row" id="mentorContent_heading">
@@ -184,7 +192,7 @@ const Mentorship = () => {
                   </b>{" "}
                   such that the range of your results is maximum!{" "}
                 </p>
-                <button onClick={()=> navigate("/metronut/enroll")} id="content3_details-btn">
+                <button onClick={() => navigate("/metronut/enroll")} id="content3_details-btn">
                   Get your mentor <i className="bi bi-arrow-right-short"></i>
                 </button>
               </div>
@@ -222,10 +230,10 @@ const Mentorship = () => {
                   </h4>
                 </div>
                 <div className="col-md-10" id="content6_details-btns">
-                  <button id="content6_details-btn1">
+                  <button id="content6_details-btn1" onClick={() => { setFormActive(true); window.scrollTo(0, 300); }}>
                     Get your Demo <i className="bi bi-arrow-right-short"></i>
                   </button>
-                  <button onClick={()=> navigate("/metronut/enroll")} id="content6_details-btn2">
+                  <button onClick={() => navigate("/metronut/enroll")} id="content6_details-btn2">
                     Get your mentor <i className="bi bi-arrow-right-short"></i>
                   </button>
                 </div>
