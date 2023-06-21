@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Footer.css'
 import { logo1 } from '../../assets/'
 import Form from '../formModal/Form'
+import { Link } from 'react-router-dom'
 function Footer() {
     const [FormActive, setFormActive] = useState(false)
     return (
@@ -16,7 +17,7 @@ function Footer() {
                     <p>1:1 personal mentorship with iitain helps you to achieve your dream IIT</p>
                 </div>
                 <div className='FooterBtnDiv'>
-                    <button className='FooterBtn1'>Enroll now</button>
+                    <button className='FooterBtn1'> <Link className="FooterBtn12" to={'/metronut/enroll'}>Enroll now</Link></button>
                     <button className='FooterBtn2' onClick={() => { setFormActive(true); window.scrollTo(0, 300); }}>Book a Free Demo</button>
                 </div>
                 <div className='FooterContentDiv'>
@@ -34,10 +35,10 @@ function Footer() {
                         <h3>Quick Links</h3>
                         <div className='InnerFooterList2'>
                             <ul className='UlFooter'>
-                                <li>JEE Mentorship </li>
-                                <li>NEET Mentorship</li>
-                                <li>Career Mentorship</li>
-                                <li>Get Placed</li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>JEE Mentorship</a></li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>NEET Mentorship</a></li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>Career Mentorship</a></li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>Get Placed</a></li>
                             </ul>
                         </div>
                     </div>
@@ -45,18 +46,18 @@ function Footer() {
                         <h3>Company</h3>
                         <div className='InnerFooterList2'>
                             <ul>
-                                <li>About us</li>
-                                <li>Contact us</li>
-                                <li>Privacy Policy</li>
-                                <li>Terms &Condition</li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>About us</a></li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>Contact us</a></li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>Privacy Policy</a></li>
+                                <li><a style={{ color: 'white' }} href="" target='blank'>Terms &Condition</a></li>
                             </ul>
                         </div>
                     </div>
                     <div className='FooterContentDiv4'>
                         <h3>Contact Us</h3>
                         <div className='FooterDivContact'>
-                            <p>mentornut@gmail.com</p>
-                            <p>834565556</p>
+                            <p><a style={{ color: 'white' }} href="" target='blank'>mentornut@gmail.com</a></p>
+                            <p><a style={{ color: 'white' }} href="" target='blank'>834565556</a></p>
                         </div>
                         <div className='FooterSocialMedia'>
                             <div className='OuterDivImageLogos'>
