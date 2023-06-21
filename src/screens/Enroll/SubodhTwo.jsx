@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import {useNavigate} from 'react-router-dom'
 import Lottie from "lottie-react";
 import "./Enroll.css";
 import sunflower from "../../assets/sunflower.json";
 
-const Enroll = ({ setPlanpage }) => {
+const Enroll = () => {
   function togglehide() {
     // let btn = document.getElementsByClassName('btn');
     let answer = document.getElementsByClassName("ans");
@@ -15,6 +16,8 @@ const Enroll = ({ setPlanpage }) => {
       }
     });
   }
+
+  const navigate = useNavigate();
   return (
     <>
       <div className="enroll-content-container">
@@ -131,15 +134,15 @@ const Enroll = ({ setPlanpage }) => {
                   fontWeight: "700",
                   cursor: "pointer",
                 }}
-                onClick={() => setPlanpage()}
+                onClick={() => navigate("/metronut/enroll/subodhone")}
               >
-                Switch to Subodh2 Plan
+                Switch to Subodh1 Plan
               </p>
             </div>
           </div>
           <div className="row">
             <div className="col-md-3" id="enroll-btns">
-              <button onClick={() => setPlanpage()}>Back</button>
+              <button onClick={() => navigate("/metronut/enroll")}>Back</button>
             </div>
           </div>
         </div>

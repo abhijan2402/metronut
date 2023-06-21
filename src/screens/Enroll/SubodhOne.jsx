@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate} from 'react-router-dom'
+import Subodh2 from './SubodhTwo';
 import Lottie from "lottie-react";
 import "./Enroll.css";
-import "./EnrollPlan.css";
-import effort from "../../assets/effort.json";
-import Navbar from "../../components/navbar/Navbar";
+import sunflower from "../../assets/sunflower.json";
+
 
 const Enroll = () => {
   function togglehide() {
@@ -20,135 +20,138 @@ const Enroll = () => {
   }
 
   const navigate = useNavigate();
+  const [switchplan, setSwitchPlan] = useState("subodh-one");
+  const SetSubodhPlan = () => setSwitchPlan("subodh-one");
 
   return (
     <>
-      <Navbar />
-      <div className="container-fluid">
-        <div className="enrollPlan-maincontainer">
-          <div className="enrollPlan-conatiner">
-            <div className="row  " id="enrollPlan-conatiner-sections">
-              <div className="col-lg-3" id="enrollPlan-clo1">
-                <div className="enrollPlan-image">
-                  <Lottie animationData={effort} style={{ height: "200px" }} />
-                </div>
-                <h1>
-                  Your efforts deserve this<span>.</span>
-                </h1>
-                <div className="social-section">
-                  <i class="bi bi-whatsapp"></i>
-                  <div>
-                    <h5>Having toubles?</h5>
-                    <Link to={"https://wa.me/83492 63619"} target={"_blank"}>
-                      <p>Get in touch with us</p>
-                    </Link>
+      {switchplan === "subodh-one" && (
+        <div className="enroll-content-container">
+          <div className="enroll-maincontainer">
+            <h1>Lets make this your best investment</h1>
+            <p className="enroll-maincontainer-p">
+              Price are shown for Sugamya (Mentorship Only) plans.
+            </p>
+            <div className="enroll-content">
+              <div className="enroll-courses">
+                <div className="enroll_note">
+                  <div className="enroll-courses-note">
+                    <h4>Do you Know?</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic nam vel ullam placeat, quasi, tempora exercitationem
+                      officiis alias necessitatibus reiciendis quia doloribus
+                      similique, quas magnam accusamus aliquam assumenda velit
+                      voluptas exercitationem officiis alias necessitatibus
+                      reiciendis quia doloribus similique, quas magnam accusamus
+                      aliquam assumenda velit voluptas.
+                    </p>
+                    <hr />
+                  </div>
+                  <div className="enroll-courses-suggestion">
+                    <h3>Then why not go for a longer plan and save money?</h3>
+                    <Lottie animationData={sunflower} />
                   </div>
                 </div>
               </div>
-              <div className="col-lg-7" id="enrollPlan-clo2">
-                <div className="enrollPlan-clo2-heading">
-                  <h1>We have created best Mentorship plans for you</h1>
-                  <p>You get complete 1-on-1 Mentorshipe in both the plan.</p>
-                </div>
-                <div className="enrollPlan-clo2-section">
-                  <div className="enrollPlan-clo2-section1">
-                    <h5>
-                      <i class="bi bi-star"></i> Subodh1
-                    </h5>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Personal IIT/AIIMS
-                      Mentor
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Regular Video Call
-                      Session
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Always connected
-                      trough chat
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Progress track and
-                      task assign
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Parents-Mentor Meet
-                    </p>
-                    <p>
-                      <i
-                        class="bi bi-check-circle-fill"
-                        style={{ color: "#fbc531" }}
-                      ></i>
-                      Doubt solving by mentor
-                    </p>
-                    <p>
-                      <i
-                        class="bi bi-check-circle-fill"
-                        style={{ color: "#fbc531" }}
-                      ></i>
-                      Learn the Topper's approach
-                    </p>
-                    <div className="enrollPlan-clo2-section1-btn">
-                      <button
-                        onClick={() => navigate("/metronut/enroll/subodhone")}
-                      >
-                        Lets Do this <i class="bi bi-arrow-right-short"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div className="enrollPlan-clo2-section1">
-                    <h5>
-                      {" "}
-                      <i class="bi bi-star"></i>Subodh2
-                    </h5>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Personal IIT/AIIMS
-                      Mentor
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Regular Video Call
-                      Session
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Always connected
-                      trough chat
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Progress track and
-                      task assign
-                    </p>
-                    <p>
-                      <i class="bi bi-check-circle-fill"></i>Parents-Mentor Meet
-                    </p>
-                    <p>
-                      <i
-                        class="bi bi-check-circle-fill"
-                        style={{ color: "#fbc531" }}
-                      ></i>
-                      Doubt solving by mentor
-                    </p>
-                    <p>
-                      <i
-                        class="bi bi-check-circle-fill"
-                        style={{ color: "#fbc531" }}
-                      ></i>
-                      Learn the Topper's approach
-                    </p>
 
-                    <div className="enrollPlan-clo2-section1-btn">
-                      <button
-                        onClick={() => navigate("/metronut/enroll/subodhtwo")}
-                      >
-                        Lets Do this <i class="bi bi-arrow-right-short"></i>
-                      </button>
-                    </div>
+              <div className="cources-prices">
+                <div className="prices">
+                  <div className="duration">
+                    <h4>12 Months</h4> <p>SAVE 45%</p>
+                  </div>
+                  <div className="price-month">
+                    <p>
+                      <i class="bi bi-currency-rupee"></i>825<span>/mo</span>{" "}
+                      <br />
+                      <span>
+                        Total <i class="bi bi-currency-rupee"></i>9,900
+                      </span>
+                    </p>
+                    <button className="btn" type="button">
+                      GO <i class="bi bi-rocket-takeoff"></i>
+                    </button>
                   </div>
                 </div>
+                <div className="prices">
+                  <div className="duration">
+                    <h4>6 Months</h4> <p>SAVE 45%</p>
+                  </div>
+                  <div className="price-month">
+                    <p>
+                      <i class="bi bi-currency-rupee"></i>975<span>/mo</span>{" "}
+                      <br />
+                      <span>
+                        Total <i class="bi bi-currency-rupee"></i>5850
+                      </span>
+                    </p>
+                    <button className="btn" type="button">
+                      GO <i class="bi bi-rocket-takeoff"></i>
+                    </button>
+                  </div>
+                </div>
+                <div className="prices">
+                  <div className="duration">
+                    <h4>3 Months</h4> <p>SAVE 45%</p>
+                  </div>
+                  <div className="price-month">
+                    <p>
+                      <i class="bi bi-currency-rupee"></i>1200<span>/mo</span>{" "}
+                      <br />
+                      <span>
+                        Total <i class="bi bi-currency-rupee"></i>3600
+                      </span>
+                    </p>
+                    <button className="btn" type="button">
+                      GO <i class="bi bi-rocket-takeoff"></i>
+                    </button>
+                  </div>
+                </div>
+                <div className="prices">
+                  <div className="duration">
+                    <h4>1 Month</h4> <p></p>
+                  </div>
+                  <div className="price-month">
+                    <p>
+                      <i class="bi bi-currency-rupee"></i>1500<span>/mo</span>
+                    </p>
+                    <button className="btn" type="button">
+                      GO <i class="bi bi-rocket-takeoff"></i>
+                    </button>
+                  </div>
+                </div>
+                <p id="payment-time">To be paid as one time payment</p>
+                <h5
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "400",
+                    marginTop: "20px",
+                    color: "rgba(0, 0, 0, 0.421)",
+                  }}
+                >
+                  Want to get doubt solved by your mentor?
+                </h5>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontSize: "12px",
+                    textDecoration: "underline",
+                    color: "rgb(53, 53, 249)",
+                    fontWeight: "700",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => navigate("/metronut/enroll/subodhtwo")}
+                >
+                  Switch to Subodh2 Plan
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-3" id="enroll-btns">
+                <button onClick={() => navigate("/metronut/enroll")}>Back</button>
               </div>
             </div>
           </div>
-        </div>
-        <div className="row justify-content-center">
           <div className="questions">
             <h1>Frequently asked Questions</h1>
             <div className="questions-content">
@@ -246,9 +249,8 @@ const Enroll = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* {page === "plan1" && <Subodh1 setPlanpage={setPlanpage} />}
-      {page === "plan2" && <Subodh2 setPlanpage={setPlanpage} />} */}
+      )}
+      {switchplan === "subodh-two" && <Subodh2 SetSubodhPlan={SetSubodhPlan} />}
     </>
   );
 };

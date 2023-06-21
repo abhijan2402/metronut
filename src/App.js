@@ -8,6 +8,8 @@ import Mentorship from './screens/Mentorship/Mentorship';
 import About from './screens/About/About';
 import CarrerMentorship from './screens/CarrerMentorship/CarrerMentorship';
 import NeetMentor from './screens/NeetMentor/NeetMentor';
+import SubodhTwo from './screens/Enroll/SubodhTwo';
+import SubodhOne from './screens/Enroll/SubodhOne';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Routes>
         <Route path='/metronut' element={<Home />} />
         <Route path='/metronut/enroll' element={<Enroll />} />
+        <Route path='/metronut/enroll/subodhtwo' element={<SubodhTwo/>} />
+        <Route path='/metronut/enroll/subodhone' element={<SubodhOne/>} />
         <Route path='/metronut/why-metorship' element={<Mentorship />} />
         <Route path='/metronut/neet-metorship' element={<NeetMentor />} />
         <Route path='/metronut/about' element={<About />} />
