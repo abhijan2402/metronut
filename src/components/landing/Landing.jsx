@@ -17,7 +17,7 @@ const Landing = () => {
         1:1 personal mentorship with iitian helps you to achieve your dream IIT
       </p>
 
-      <div className="landing-price" onClick={() => navigate('/metronut/career-mentorship')}>
+      <div className="landing-price" onClick={() => navigate('/metronut/career-mentorship1')}>
         <h2>MENTORSHIP SESSION &nbsp;</h2>
         <h2>
           {' '}
@@ -68,9 +68,9 @@ const Landing = () => {
           </div>
         </div>
 
-         <div className='landing-vr' style={{width: 2, height: 50, backgroundColor: '#000000'}} ></div>
+        <div className='landing-vr' style={{ width: 2, height: 50, backgroundColor: '#000000' }} ></div>
 
-          <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <span className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <span style={{color: '#000'}}>like</span></span> </h3>
+        <h3 className='text-center text-uppercase mentor-from' style={{ color: '#000' }}>Mentor from <span className='d-flex justify-content-center gap-2' style={{ color: '#ff691b' }}>TOP IIT <span style={{ color: '#000' }}>like</span></span> </h3>
 
         <div className='d-flex gap-2 gap-md-5 collges'>
           <img width={50} height={50} src={bombay} alt="" />
@@ -79,12 +79,12 @@ const Landing = () => {
           <img width={50} height={50} src={roorkee} alt="" />
           <img width={50} height={50} src={kharappur} alt="" />
           <img width={50} height={50} src={delhi} alt="" />
-        </div> 
+        </div>
       </div>
 
       <div className="container align-items-center landing-box-mobile" >
 
-          <h3 className='text-center text-uppercase mentor-from' style={{color: '#000'}}>Mentor from <span className='d-flex justify-content-center gap-2' style={{color: '#ff691b'}}>TOP IIT <span style={{color: '#000'}}>like</span></span> </h3>
+        <h3 className='text-center text-uppercase mentor-from' style={{ color: '#000' }}>Mentor from <span className='d-flex justify-content-center gap-2' style={{ color: '#ff691b' }}>TOP IIT <span style={{ color: '#000' }}>like</span></span> </h3>
 
         <div className='d-flex px-2 py-2 px-md-4 py-md-3  gap-1 gap-md-5 collges' >
           <img src={bombay} alt="" />
@@ -93,7 +93,7 @@ const Landing = () => {
           <img src={roorkee} alt="" />
           <img src={kharappur} alt="" />
           <img src={delhi} alt="" />
-        </div> 
+        </div>
       </div>
     </div>
   );

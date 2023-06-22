@@ -15,48 +15,48 @@ const Session = () => {
                 <h2>Why should you go for a personal session?</h2>
                 <div className="coloumn1-list">
 
-                <ul>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Verify your current study plan from our Expert Mentors.
-                    </span>
-                  </li>
-                </ul>
+                  <ul>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Verify your current study plan from our Expert Mentors.
+                      </span>
+                    </li>
+                  </ul>
                 </div>
                 <p>
                   Get an edge over your competition by fetching the maximum out
@@ -70,7 +70,7 @@ const Session = () => {
                 <h1>Rs 199/-</h1>
                 <h6>Per Session</h6>
                 <p>
-                  <button>BOOK NOW</button>
+                  <button><a style={{ color: "black" }} href="">BOOK NOW</a></button>
                 </p>
                 <div id="list_1">
                   <ul>

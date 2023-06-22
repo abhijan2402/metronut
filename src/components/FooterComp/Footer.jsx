@@ -17,7 +17,7 @@ function Footer() {
                     <p>1:1 personal mentorship with iitain helps you to achieve your dream IIT</p>
                 </div>
                 <div className='FooterBtnDiv'>
-                    <button className='FooterBtn1'> <Link className="FooterBtn12" to={'/metronut/enroll'}>Enroll now</Link></button>
+                    <button className='FooterBtn1' onClick={() => { window.scrollTo(0, 300); }}> <Link className="FooterBtn12" to={'/metronut/enroll'}>Enroll now</Link></button>
                     <button className='FooterBtn2' onClick={() => { setFormActive(true); window.scrollTo(0, 300); }}>Book a Free Demo</button>
                 </div>
                 <div className='FooterContentDiv'>

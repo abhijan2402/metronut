@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Subodh2 from './SubodhTwo';
 import Lottie from "lottie-react";
 import "./Enroll.css";
@@ -69,7 +69,10 @@ const Enroll = () => {
                       </span>
                     </p>
                     <button className="btn" type="button">
-                      GO <i class="bi bi-rocket-takeoff"></i>
+                      <a>
+                        GO
+                      </a>
+                      <i class="bi bi-rocket-takeoff"></i>
                     </button>
                   </div>
                 </div>
@@ -86,7 +89,10 @@ const Enroll = () => {
                       </span>
                     </p>
                     <button className="btn" type="button">
-                      GO <i class="bi bi-rocket-takeoff"></i>
+                      <a>
+                        GO
+                      </a>
+                      <i class="bi bi-rocket-takeoff"></i>
                     </button>
                   </div>
                 </div>
@@ -103,7 +109,10 @@ const Enroll = () => {
                       </span>
                     </p>
                     <button className="btn" type="button">
-                      GO <i class="bi bi-rocket-takeoff"></i>
+                      <a>
+                        GO
+                      </a>
+                      <i class="bi bi-rocket-takeoff"></i>
                     </button>
                   </div>
                 </div>
@@ -116,7 +125,8 @@ const Enroll = () => {
                       <i class="bi bi-currency-rupee"></i>1500<span>/mo</span>
                     </p>
                     <button className="btn" type="button">
-                      GO <i class="bi bi-rocket-takeoff"></i>
+                      <a>GO</a>
+                      <i class="bi bi-rocket-takeoff"></i>
                     </button>
                   </div>
                 </div>
